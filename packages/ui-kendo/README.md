@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm i @ng-dynamic-forms/ui-kendo -S
+npm i @ss-dynamic-forms/ui-kendo -S
 ```
 
 ## Import
@@ -71,5 +71,5 @@ with **`DynamicKendoFormControlComponent`**:
 ## Resources
 
 * [**API Documentation**](http://ng2-dynamic-forms.udos86.de/docs/ui-kendo/)
-* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#kendo-sample-form) 
+* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#kendo-sample-form)
 

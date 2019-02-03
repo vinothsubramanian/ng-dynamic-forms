@@ -8,7 +8,7 @@ import {
     DynamicFormLayoutService,
     DynamicFormService,
     DynamicTemplateDirective,
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 import { DynamicFoundationFormControlContainerComponent } from "./dynamic-foundation-form-control-container.component";
 
 @Component({

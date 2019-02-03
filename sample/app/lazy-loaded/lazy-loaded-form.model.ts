@@ -1,4 +1,4 @@
-import { DynamicInputModel } from "@ng-dynamic-forms/core";
+import { DynamicInputModel } from "@ss-dynamic-forms/core";
 
 export const LAZY_LOADED_FORM_MODEL = [
 

@@ -1,5 +1,5 @@
 import { TemplateRef } from "@angular/core";
-import { DynamicTemplateableFormControlComponent, DynamicTemplateDirective } from "@ng-dynamic-forms/core";
+import { DynamicTemplateableFormControlComponent, DynamicTemplateDirective } from "@ss-dynamic-forms/core";
 
 export abstract class DynamicPrimeNGTemplateableFormControlComponent extends DynamicTemplateableFormControlComponent {
 

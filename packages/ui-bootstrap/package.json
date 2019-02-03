@@ -1,5 +1,5 @@
 {
-  "name": "@ng-dynamic-forms/ui-bootstrap",
+  "name": "@ss-dynamic-forms/ui-bootstrap",
   "version": "7.1.0",
   "description": "Bootstrap UI package for NG Dynamic Forms",
   "keywords": [
@@ -12,9 +12,9 @@
     "reactive forms",
     "ui"
   ],
-  "homepage": "https://github.com/udos86/ng-dynamic-forms#readme",
+  "homepage": "https://github.com/vinothsubramanian/ng-dynamic-forms#readme",
   "bugs": {
-    "url": "https://github.com/udos86/ng-dynamic-forms/issues"
+    "url": "https://github.com/vinothsubramanian/ng-dynamic-forms/issues"
   },
   "license": "ISC",
   "author": {
@@ -27,13 +27,13 @@
   "typings": "./ui-bootstrap.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udos86/ng-dynamic-forms.git"
+    "url": "git+https://github.com/vinothsubramanian/ng-dynamic-forms.git"
   },
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0",
     "@angular/forms": "^7.0.0",
-    "@ng-dynamic-forms/core": "^7.1.0",
+    "@ss-dynamic-forms/core": "^7.1.0",
     "angular2-text-mask": "^9.0.0",
     "bootstrap": "^3.3.7",
     "ngx-bootstrap": "^3.1.1",

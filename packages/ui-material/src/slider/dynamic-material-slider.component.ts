@@ -8,7 +8,7 @@ import {
     DynamicFormLayoutService,
     DynamicFormValidationService,
     DynamicSliderModel
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 @Component({
     selector: "dynamic-material-slider",

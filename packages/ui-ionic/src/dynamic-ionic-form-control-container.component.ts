@@ -34,7 +34,7 @@ import {
     DynamicFormLayoutService,
     DynamicFormValidationService,
     DynamicTemplateDirective
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 import { DynamicIonicCheckboxComponent } from "./checkbox/dynamic-ionic-checkbox.component";
 import { DynamicIonicDateTimeComponent } from "./datetime/dynamic-ionic-datetime.component";
 import { DynamicIonicFormArrayComponent } from "./form-array/dynamic-ionic-form-array.component";

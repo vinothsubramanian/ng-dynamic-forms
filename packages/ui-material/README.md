@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm i @ng-dynamic-forms/ui-material -S
+npm i @ss-dynamic-forms/ui-material -S
 ```
 
 ## Import
@@ -65,4 +65,4 @@ with **`DynamicMaterialFormControlComponent`**:
 ## Resources
 
 * [**API Documentation**](http://ng2-dynamic-forms.udos86.de/docs/ui-material/)
-* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#material-sample-form) 
+* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#material-sample-form)

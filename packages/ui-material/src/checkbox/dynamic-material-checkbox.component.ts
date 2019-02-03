@@ -8,7 +8,7 @@ import {
     DynamicFormLayout,
     DynamicFormLayoutService,
     DynamicFormValidationService,
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 @Component({
     selector: "dynamic-material-checkbox",

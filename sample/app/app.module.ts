@@ -10,14 +10,14 @@ import { NG_ASYNC_VALIDATORS, NG_VALIDATORS, ReactiveFormsModule } from "@angula
 import { NgbDatepickerModule, NgbRatingModule, NgbTimepickerModule } from "@ng-bootstrap/ng-bootstrap";
 import { BsDatepickerModule, TimepickerModule } from "ngx-bootstrap";
 
-import { DYNAMIC_VALIDATORS, DynamicFormsCoreModule, Validator, ValidatorFactory } from "@ng-dynamic-forms/core";
-import { DynamicFormsBasicUIModule } from "@ng-dynamic-forms/ui-basic";
-import { DynamicFormsBootstrapUIModule } from "@ng-dynamic-forms/ui-bootstrap";
-import { DynamicFormsFoundationUIModule } from "@ng-dynamic-forms/ui-foundation";
-import { DynamicFormsKendoUIModule } from "@ng-dynamic-forms/ui-kendo";
-import { DynamicFormsMaterialUIModule } from "@ng-dynamic-forms/ui-material";
-import { DynamicFormsNGBootstrapUIModule } from "@ng-dynamic-forms/ui-ng-bootstrap";
-import { DynamicFormsPrimeNGUIModule } from "@ng-dynamic-forms/ui-primeng";
+import { DYNAMIC_VALIDATORS, DynamicFormsCoreModule, Validator, ValidatorFactory } from "@ss-dynamic-forms/core";
+import { DynamicFormsBasicUIModule } from "@ss-dynamic-forms/ui-basic";
+import { DynamicFormsBootstrapUIModule } from "@ss-dynamic-forms/ui-bootstrap";
+import { DynamicFormsFoundationUIModule } from "@ss-dynamic-forms/ui-foundation";
+import { DynamicFormsKendoUIModule } from "@ss-dynamic-forms/ui-kendo";
+import { DynamicFormsMaterialUIModule } from "@ss-dynamic-forms/ui-material";
+import { DynamicFormsNGBootstrapUIModule } from "@ss-dynamic-forms/ui-ng-bootstrap";
+import { DynamicFormsPrimeNGUIModule } from "@ss-dynamic-forms/ui-primeng";
 
 import { BasicSampleFormComponent } from "./ui-basic/basic-sample-form.component";
 import { BootstrapSampleFormComponent } from "./ui-bootstrap/bootstrap-sample-form.component";

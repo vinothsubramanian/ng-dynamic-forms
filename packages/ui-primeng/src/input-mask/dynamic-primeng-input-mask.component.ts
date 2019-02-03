@@ -8,7 +8,7 @@ import {
     DynamicFormValidationService,
     DynamicFormControlComponent,
     DynamicInputModel
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 @Component({
     selector: "dynamic-primeng-input-mask",
