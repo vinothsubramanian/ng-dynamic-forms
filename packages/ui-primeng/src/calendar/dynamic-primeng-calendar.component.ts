@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewCh
 import { FormGroup } from "@angular/forms";
 import { Calendar } from "primeng/primeng";
 import {
-    DynamicDatePickerModel, 
+    DynamicDatePickerModel,
     DynamicFormControlCustomEvent,
     DynamicDateControlValue,
     DynamicFormLayout,
@@ -10,7 +10,7 @@ import {
     DynamicFormValidationService,
     DynamicFormControlComponent,
     DynamicTimePickerModel
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 @Component({
     selector: "dynamic-primeng-calendar",

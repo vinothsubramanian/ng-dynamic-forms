@@ -7,7 +7,7 @@ import {
     DynamicFormValidationService,
     DynamicFormControlComponent,
     DynamicSelectModel
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 @Component({
     selector: "dynamic-primeng-multiselect",

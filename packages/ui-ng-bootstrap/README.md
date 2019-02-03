@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm i @ng-dynamic-forms/ui-ng-bootstrap -S
+npm i @ss-dynamic-forms/ui-ng-bootstrap -S
 ```
 
 ## Import
@@ -54,4 +54,4 @@ with **`DynamicNGBootstrapFormControlComponent`**:
 ## Resources
 
 * [**API Documentation**](http://ng2-dynamic-forms.udos86.de/docs/ui-ng-bootstrap/)
-* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#ng-bootstrap-sample-form) 
+* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#ng-bootstrap-sample-form)

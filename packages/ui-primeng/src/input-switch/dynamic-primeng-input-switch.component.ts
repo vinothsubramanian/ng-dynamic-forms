@@ -7,7 +7,7 @@ import {
     DynamicFormValidationService,
     DynamicFormControlComponent,
     DynamicSwitchModel
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 @Component({
     selector: "dynamic-primeng-input-switch",

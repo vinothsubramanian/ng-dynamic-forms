@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm i @ng-dynamic-forms/ui-foundation -S
+npm i @ss-dynamic-forms/ui-foundation -S
 ```
 
 ## Import
@@ -51,4 +51,4 @@ with **`DynamicFoundationFormControlComponent`**:
 ## Resources
 
 * [**API Documentation**](http://ng2-dynamic-forms.udos86.de/docs/ui-foundation/)
-* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#foundation-sample-form) 
+* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#foundation-sample-form)

@@ -27,7 +27,7 @@ import {
     DynamicSwitchModel,
     DynamicTextAreaModel,
     DynamicTimePickerModel
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 import {
     DynamicKendoFormControlContainerComponent,
     kendoUIFormControlMapFn

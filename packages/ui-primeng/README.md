@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm i @ng-dynamic-forms/ui-primeng -S
+npm i @ss-dynamic-forms/ui-primeng -S
 ```
 
 ## Import
@@ -70,4 +70,4 @@ with **`DynamicPrimeNGFormControlComponent`**:
 ## Resources
 
 * [**API Documentation**](http://ng2-dynamic-forms.udos86.de/docs/ui-primeng/)
-* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#primeng-sample-form) 
+* [**Live Sample**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html#primeng-sample-form)
