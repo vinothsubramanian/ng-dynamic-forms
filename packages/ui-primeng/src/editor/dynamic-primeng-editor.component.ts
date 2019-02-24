@@ -13,7 +13,6 @@ import {
 @Component({
     selector: "dynamic-primeng-editor",
     templateUrl: "./dynamic-primeng-editor.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DynamicPrimeNGEditorComponent extends DynamicFormControlComponent {
 

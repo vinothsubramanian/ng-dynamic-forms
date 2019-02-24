@@ -1,3 +1,9 @@
+# 7.1.1
+
+### **Bugfixes**
+
+* ui-primeng fix for [`markAsTouched doesn't change input class`](https://github.com/udos86/ng-dynamic-forms/pull/915) added
+
 # 7.1.0
 
 ### **Features**

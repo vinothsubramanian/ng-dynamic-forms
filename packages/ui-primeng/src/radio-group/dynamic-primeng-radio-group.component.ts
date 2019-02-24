@@ -11,7 +11,6 @@ import {
 @Component({
     selector: "dynamic-primeng-radio-group",
     templateUrl: "./dynamic-primeng-radio-group.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DynamicPrimeNGRadioGroupComponent extends DynamicFormControlComponent {
 

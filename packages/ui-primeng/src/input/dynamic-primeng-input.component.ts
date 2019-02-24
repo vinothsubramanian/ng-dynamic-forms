@@ -12,7 +12,6 @@ import {
 @Component({
     selector: "dynamic-primeng-input",
     templateUrl: "./dynamic-primeng-input.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DynamicPrimeNGInputComponent extends DynamicFormControlComponent {
 

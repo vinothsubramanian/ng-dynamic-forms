@@ -12,7 +12,6 @@ import {
 @Component({
     selector: "dynamic-primeng-multiselect",
     templateUrl: "./dynamic-primeng-multiselect.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DynamicPrimeNGMultiSelectComponent extends DynamicFormControlComponent {
 

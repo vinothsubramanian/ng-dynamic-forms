@@ -12,7 +12,6 @@ import {
 @Component({
     selector: "dynamic-primeng-checkbox",
     templateUrl: "./dynamic-primeng-checkbox.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DynamicPrimeNGCheckboxComponent extends DynamicFormControlComponent {
 

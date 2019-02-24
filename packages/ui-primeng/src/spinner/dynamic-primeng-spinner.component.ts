@@ -12,7 +12,6 @@ import {
 @Component({
     selector: "dynamic-primeng-spinner",
     templateUrl: "./dynamic-primeng-spinner.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DynamicPrimeNGSpinnerComponent extends DynamicFormControlComponent {
 

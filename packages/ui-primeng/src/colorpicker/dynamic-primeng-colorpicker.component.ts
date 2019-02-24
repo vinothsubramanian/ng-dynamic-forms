@@ -12,7 +12,6 @@ import {
 @Component({
     selector: "dynamic-primeng-colorpicker",
     templateUrl: "./dynamic-primeng-colorpicker.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DynamicPrimeNGColorPickerComponent extends DynamicFormControlComponent {
 
