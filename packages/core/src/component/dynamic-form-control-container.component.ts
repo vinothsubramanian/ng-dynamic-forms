@@ -164,7 +164,7 @@ export abstract class DynamicFormControlContainerComponent implements OnChanges,
     }
 
     get showErrorMessages(): boolean {
-        return this.model.hasErrorMessages && this.control.touched && !this.hasFocus && this.isInvalid;
+        return this.model && this.model.hasErrorMessages && this.control && this.control.touched && !this.hasFocus && this.isInvalid;
     }
 
     get templates(): QueryList<DynamicTemplateDirective> | undefined {

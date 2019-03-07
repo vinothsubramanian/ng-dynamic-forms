@@ -66,7 +66,7 @@ export abstract class DynamicFormControlComponent implements DynamicFormControl 
     }
 
     get showErrorMessages(): boolean {
-        return this.model.hasErrorMessages && this.control.touched && !this.hasFocus && this.isInvalid;
+        return this.model && this.model.hasErrorMessages && this.control && this.control.touched && !this.hasFocus && this.isInvalid;
     }
 
     getClass(context: DynamicFormControlLayoutContext, place: DynamicFormControlLayoutPlace, model: DynamicFormControlModel = this.model): string {
