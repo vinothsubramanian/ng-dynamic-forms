@@ -2,7 +2,15 @@
 
 ### **Bugfixes**
 
+<<<<<<< HEAD
 * ui-primeng fix for [`markAsTouched doesn't change input class`](https://github.com/udos86/ng-dynamic-forms/pull/915) added
+=======
+* `DynamicFormInstancesService` now working correctly (closes [#933](https://github.com/udos86/ng-dynamic-forms/issues/933))
+* `autoWidth` removed from `DynamicPrimeNGDropdownComponent` (closes [#945](https://github.com/udos86/ng-dynamic-forms/issues/945))
+
+***
+
+>>>>>>> origin/ss-dynamic-forms
 
 # 7.1.0
 
