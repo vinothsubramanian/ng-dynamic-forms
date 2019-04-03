@@ -1,4 +1,4 @@
-<div [formGroup]="group" [ngClass]="[getClass('element', 'container'), getClass('grid', 'container'), model.disabled ? 'ui-control-container-disabled' : '']">
+<div [formGroup]="group" [ngClass]="[getClass('element', 'container'), getClass('grid', 'container'), model.disabled ? 'ui-control-container-disabled' : '']" [title]='getTitle()'>
 
     <div *ngIf="!isCheckbox && hasLabel" [ngClass]="getClass('grid', 'label')">
 

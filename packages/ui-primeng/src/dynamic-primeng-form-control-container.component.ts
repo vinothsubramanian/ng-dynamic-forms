@@ -92,6 +92,10 @@ export class DynamicPrimeNGFormControlContainerComponent extends DynamicFormCont
     get componentType(): Type<DynamicFormControl> | null {
         return this.layoutService.getCustomComponentType(this.model) || primeNGUIFormControlMapFn(this.model);
     }
+
+    getTitle(): string {
+        return this.group!.get(this.model!.id)!.value;
+    }
 }
 
 export function primeNGUIFormControlMapFn(model: DynamicFormControlModel): Type<DynamicFormControl> | null {
