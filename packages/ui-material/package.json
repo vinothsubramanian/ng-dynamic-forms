@@ -1,6 +1,6 @@
 {
   "name": "@ss-dynamic-forms/ui-material",
-  "version": "7.1.11",
+  "version": "7.1.14",
   "description": "Material UI package for NG Dynamic Forms",
   "keywords": [
     "angular",
@@ -33,7 +33,7 @@
     "@angular/core": "^7.0.0",
     "@angular/forms": "^7.0.0",
     "@angular/material": "^7.0.0",
-    "@ss-dynamic-forms/core": "^7.1.11",
+    "@ss-dynamic-forms/core": "^7.1.14",
     "angular2-text-mask": "^9.0.0",
     "rxjs": "^6.3.0"
   },

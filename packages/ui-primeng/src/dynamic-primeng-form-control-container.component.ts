@@ -94,7 +94,13 @@ export class DynamicPrimeNGFormControlContainerComponent extends DynamicFormCont
     }
 
     getTitle(): string {
-        return this.group!.get(this.model!.id)!.value;
+        const title = this.group!.get(this.model!.id)!.value || "";
+
+        if (["CHECKBOX", "CHECKBOX_GROUP", "RADIO_GROUP"].indexOf(this.model.type) < 0
+            && typeof title !== "object" && typeof title !== "boolean") {
+            return title;
+        }
+        return "";
     }
 }
 
