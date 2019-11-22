@@ -1,6 +1,6 @@
 {
-  "name": "@ng-dynamic-forms/ui-material",
-  "version": "9.1.0",
+  "name": "@ss-dynamic-forms/ui-material",
+  "version": "9.1.01",
   "description": "Material UI package for NG Dynamic Forms",
   "keywords": [
     "angular",
@@ -11,29 +11,29 @@
     "reactive forms",
     "ui"
   ],
-  "homepage": "https://github.com/vinothsubramanian/ng-dynamic-forms#readme",
+  "homepage": "https://github.com/vinothsubramanian/ss-dynamic-forms#readme",
   "bugs": {
-    "url": "https://github.com/vinothsubramanian/ng-dynamic-forms/issues"
+    "url": "https://github.com/vinothsubramanian/ss-dynamic-forms/issues"
   },
   "license": "ISC",
   "author": {
     "name": "Udo Schöfer",
     "email": "ng2-dynamic-forms@udos86.de",
-    "url": "https://github.com/udos86/ng-dynamic-forms"
+    "url": "https://github.com/udos86/ss-dynamic-forms"
   },
   "main": "./bundles/ui-material.umd.js",
   "module": "./fesm5/ui-material.js",
   "typings": "./ui-material.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinothsubramanian/ng-dynamic-forms.git"
+    "url": "git+https://github.com/vinothsubramanian/ss-dynamic-forms.git"
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0",
     "@angular/forms": "^8.0.0",
     "@angular/material": "^8.0.0",
-    "@ng-dynamic-forms/core": "^9.1.0",
+    "@ss-dynamic-forms/core": "^9.1.01",
     "angular2-text-mask": "^9.0.0",
     "rxjs": "^6.4.0"
   },

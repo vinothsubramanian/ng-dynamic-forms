@@ -41,7 +41,7 @@ import {
     DynamicInputModel,
     DynamicSelectModel,
     DynamicTemplateDirective
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 import { DynamicPrimeNGCheckboxComponent } from "./checkbox/dynamic-primeng-checkbox.component";
 import { DynamicPrimeNGColorPickerComponent } from "./colorpicker/dynamic-primeng-colorpicker.component";
 import { DynamicPrimeNGCalendarComponent } from "./calendar/dynamic-primeng-calendar.component";
@@ -93,6 +93,16 @@ export class DynamicPrimeNGFormControlContainerComponent extends DynamicFormCont
 
     get componentType(): Type<DynamicFormControl> | null {
         return this.componentService.getCustomComponentType(this.model) || primeNGUIFormControlMapFn(this.model);
+    }
+
+    getTitle(): string {
+        const title = this.group!.get(this.model!.id)!.value || "";
+
+        if (["CHECKBOX", "CHECKBOX_GROUP", "RADIO_GROUP"].indexOf(this.model.type) < 0
+            && typeof title !== "object" && typeof title !== "boolean") {
+            return title;
+        }
+        return "";
     }
 }
 

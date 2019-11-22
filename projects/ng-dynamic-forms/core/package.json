@@ -1,6 +1,6 @@
 {
-  "name": "@ng-dynamic-forms/core",
-  "version": "9.1.0",
+  "name": "@ss-dynamic-forms/core",
+  "version": "9.1.01",
   "description": "A rapid form development library for Angular",
   "keywords": [
     "angular",
@@ -10,22 +10,22 @@
     "ng dynamic forms",
     "reactive forms"
   ],
-  "homepage": "https://github.com/vinothsubramanian/ng-dynamic-forms#readme",
+  "homepage": "https://github.com/vinothsubramanian/ss-dynamic-forms#readme",
   "bugs": {
-    "url": "https://github.com/vinothsubramanian/ng-dynamic-forms/issues"
+    "url": "https://github.com/vinothsubramanian/ss-dynamic-forms/issues"
   },
   "license": "ISC",
   "author": {
     "name": "Udo Schöfer",
     "email": "ng2-dynamic-forms@udos86.de",
-    "url": "https://github.com/udos86/ng-dynamic-forms"
+    "url": "https://github.com/udos86/ss-dynamic-forms"
   },
   "main": "./bundles/core.umd.js",
   "module": "./fesm5/core.js",
   "typings": "./core.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinothsubramanian/ng-dynamic-forms.git"
+    "url": "git+https://github.com/vinothsubramanian/ss-dynamic-forms.git"
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0",

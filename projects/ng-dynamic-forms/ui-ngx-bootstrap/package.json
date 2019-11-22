@@ -1,5 +1,5 @@
 {
-  "name": "@ng-dynamic-forms/ui-ngx-bootstrap",
+  "name": "@ss-dynamic-forms/ui-ngx-bootstrap",
   "version": "9.0.1",
   "description": "ngx-bootstrap UI package for NG Dynamic Forms",
   "keywords": [
@@ -12,28 +12,28 @@
     "reactive forms",
     "ui"
   ],
-  "homepage": "https://github.com/udos86/ng-dynamic-forms#readme",
+  "homepage": "https://github.com/udos86/ss-dynamic-forms#readme",
   "bugs": {
-    "url": "https://github.com/udos86/ng-dynamic-forms/issues"
+    "url": "https://github.com/udos86/ss-dynamic-forms/issues"
   },
   "license": "ISC",
   "author": {
     "name": "Udo Schöfer",
     "email": "ng2-dynamic-forms@udos86.de",
-    "url": "https://github.com/udos86/ng-dynamic-forms"
+    "url": "https://github.com/udos86/ss-dynamic-forms"
   },
   "main": "./bundles/ui-ngx-bootstrap.umd.js",
   "module": "./fesm5/ui-ngx-bootstrap.js",
   "typings": "./ui-ngx-bootstrap.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udos86/ng-dynamic-forms.git"
+    "url": "git+https://github.com/udos86/ss-dynamic-forms.git"
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0",
     "@angular/forms": "^8.0.0",
-    "@ng-dynamic-forms/core": "^9.0.1",
+    "@ss-dynamic-forms/core": "^9.0.1",
     "angular2-text-mask": "^9.0.0",
     "bootstrap": "^4.0.0",
     "ngx-bootstrap": "^5.0.0",

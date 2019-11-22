@@ -1,6 +1,6 @@
 {
-  "name": "@ng-dynamic-forms/schematics",
-  "version": "9.1.0",
+  "name": "@ss-dynamic-forms/schematics",
+  "version": "9.1.01",
   "description": "NG Dynamic Forms schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -15,7 +15,7 @@
   "author": {
     "name": "Udo Schöfer",
     "email": "ng2-dynamic-forms@udos86.de",
-    "url": "https://github.com/udos86/ng-dynamic-forms"
+    "url": "https://github.com/udos86/ss-dynamic-forms"
   },
   "license": "ISC",
   "schematics": "./collection.json",

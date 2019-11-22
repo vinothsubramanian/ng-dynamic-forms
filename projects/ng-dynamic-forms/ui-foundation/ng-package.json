@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/ng-dynamic-forms/ui-foundation",
+  "dest": "../../../dist/ss-dynamic-forms/ui-foundation",
   "lib": {
     "entryFile": "src/public-api.ts",
     "flatModuleFile": "ui-foundation",

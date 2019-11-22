@@ -1,6 +1,6 @@
 {
-  "name": "@ng-dynamic-forms/ui-kendo",
-  "version": "9.1.0",
+  "name": "@ss-dynamic-forms/ui-kendo",
+  "version": "9.1.01",
   "description": "Kendo UI package for NG Dynamic Forms",
   "keywords": [
     "angular",
@@ -11,28 +11,28 @@
     "reactive forms",
     "ui"
   ],
-  "homepage": "https://github.com/vinothsubramanian/ng-dynamic-forms#readme",
+  "homepage": "https://github.com/vinothsubramanian/ss-dynamic-forms#readme",
   "bugs": {
-    "url": "https://github.com/vinothsubramanian/ng-dynamic-forms/issues"
+    "url": "https://github.com/vinothsubramanian/ss-dynamic-forms/issues"
   },
   "license": "SEE TELERIK KENDO UI FOR ANGULAR LICENSE",
   "author": {
     "name": "Udo Schöfer",
     "email": "ng2-dynamic-forms@udos86.de",
-    "url": "https://github.com/udos86/ng-dynamic-forms"
+    "url": "https://github.com/udos86/ss-dynamic-forms"
   },
   "main": "./bundles/ui-kendo.umd.js",
   "module": "./fesm5/ui-kendo.js",
   "typings": "./ui-kendo.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinothsubramanian/ng-dynamic-forms.git"
+    "url": "git+https://github.com/vinothsubramanian/ss-dynamic-forms.git"
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0",
     "@angular/forms": "^8.0.0",
-    "@ng-dynamic-forms/core": "^9.1.0",
+    "@ss-dynamic-forms/core": "^9.1.01",
     "@progress/kendo-angular-dateinputs": "^4.0.0",
     "@progress/kendo-angular-dropdowns": "^4.0.0",
     "@progress/kendo-angular-inputs": "^6.0.0",

@@ -3,20 +3,20 @@
 # NG Dynamic Forms
 
 [![npm version](https://badge.fury.io/js/%40ng-dynamic-forms%2Fcore.svg)](https://badge.fury.io/js/%40ng-dynamic-forms%2Fcore)
-[![Build Status](https://travis-ci.org/udos86/ng-dynamic-forms.svg?branch=master)](https://travis-ci.org/udos86/ng-dynamic-forms)
-[![codecov](https://codecov.io/gh/udos86/ng-dynamic-forms/branch/master/graph/badge.svg)](https://codecov.io/gh/udos86/ng-dynamic-forms)
+[![Build Status](https://travis-ci.org/udos86/ss-dynamic-forms.svg?branch=master)](https://travis-ci.org/udos86/ss-dynamic-forms)
+[![codecov](https://codecov.io/gh/udos86/ss-dynamic-forms/branch/master/graph/badge.svg)](https://codecov.io/gh/udos86/ss-dynamic-forms)
 [![DeepScan Grade](https://deepscan.io/api/projects/562/branches/912/badge/grade.svg)](https://deepscan.io/dashboard/#view=project&pid=562&bid=912)
-[![Downloads](http://img.shields.io/npm/dm/@ng-dynamic-forms/core.svg)](https://npmjs.org/package/@ng-dynamic-forms/core)
+[![Downloads](http://img.shields.io/npm/dm/@ss-dynamic-forms/core.svg)](https://npmjs.org/package/@ss-dynamic-forms/core)
 
 ***
 
 NG Dynamic Forms is a **rapid form development library** based on the official Angular
 [**dynamic forms guide**](https://angular.io/docs/ts/latest/cookbook/dynamic-form.html).
 
-It **fully automates form UI creation** by introducing a set of maintainable **form control models** and **dynamic form control components** 
+It **fully automates form UI creation** by introducing a set of maintainable **form control models** and **dynamic form control components**
 
 **Out of the box support** is provided for all popular UI libraries including **[Material](https://material.angular.io/)**, **[ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)**, **[NG Bootstrap](https://ng-bootstrap.github.io/#/home)**, **[Foundation](http://foundation.zurb.com/)**, **[Ionic](http://ionicframework.com/)**, **[Kendo](http://www.telerik.com/kendo-angular-ui)** and **[PrimeNG](http://www.primefaces.org/primeng/#/)**.
-                                                                                          
+
 [**Explore it**](http://ng2-dynamic-forms.udos86.de/sample/index.html) live in action!
 
 ## Table of Contents
@@ -47,12 +47,12 @@ It **fully automates form UI creation** by introducing a set of maintainable **f
 
 **1. Install the core package**:
 ```
-npm i @ng-dynamic-forms/core -S
+npm i @ss-dynamic-forms/core -S
 ```
-  
+
 **2. Install a [UI package](#ui-modules) and its peer dependencies**:
 ```
-npm i @ng-dynamic-forms/ui-material -S
+npm i @ss-dynamic-forms/ui-material -S
 ```
 
 
@@ -60,8 +60,8 @@ npm i @ng-dynamic-forms/ui-material -S
 
 **1. Clone the Git repository**:
 ```
-git clone https://github.com/udos86/ng-dynamic-forms.git
-cd ng-dynamic-forms
+git clone https://github.com/udos86/ss-dynamic-forms.git
+cd ss-dynamic-forms
 ```
 
 **2. Install the dependencies**:
@@ -84,10 +84,10 @@ ng serve
 
 **1. Import the UI module**:
 ```typescript
-import { DynamicFormsMaterialUIModule } from "@ng-dynamic-forms/ui-material";
+import { DynamicFormsMaterialUIModule } from "@ss-dynamic-forms/ui-material";
 
 @NgModule({
-    
+
     imports: [
         ReactiveFormsModule,
         DynamicFormsMaterialUIModule
@@ -104,7 +104,7 @@ import {
     DynamicCheckboxModel,
     DynamicInputModel,
     DynamicRadioGroupModel
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 export const MY_FORM_MODEL: DynamicFormModel = [
 
@@ -148,7 +148,7 @@ export const MY_FORM_MODEL: DynamicFormModel = [
 **3. Create a** `FormGroup` **via** `DynamicFormService`:
 ```typescript
 import { MY_FORM_MODEL } from "./my-dynamic-form.model";
-import { DynamicFormModel, DynamicFormService } from "@ng-dynamic-forms/core";
+import { DynamicFormModel, DynamicFormService } from "@ss-dynamic-forms/core";
 
 export class MyDynamicFormComponent implements OnInit {
 
@@ -168,7 +168,7 @@ export class MyDynamicFormComponent implements OnInit {
 <form [formGroup]="formGroup">
 
     <dynamic-material-form [group]="formGroup" [model]="formModel"></dynamic-material-form>
-                            
+
 </form>
 ```
 
@@ -177,19 +177,19 @@ export class MyDynamicFormComponent implements OnInit {
 
 NG Dynamic Forms is built to provide **solid yet unobtrusive** support for a variety of common UI libraries:
 
-* **[Basic](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-basic)**
-* **[Foundation](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-foundation)**
-* **[Ionic](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-ionic)**
-* **[Kendo UI](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-kendo)**
-* **[Material](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-material)**
-* **[NG Bootstrap](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-ng-bootstrap)**
-* **[ngx-bootstrap](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-ngx-bootstrap)**
-* **[PrimeNG](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-primeng)**
+* **[Basic](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-basic)**
+* **[Foundation](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-foundation)**
+* **[Ionic](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-ionic)**
+* **[Kendo UI](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-kendo)**
+* **[Material](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-material)**
+* **[NG Bootstrap](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-ng-bootstrap)**
+* **[ngx-bootstrap](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-ngx-bootstrap)**
+* **[PrimeNG](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-primeng)**
 
 You can instantly plug in your favorite form controls by **installing the appropriate
 package and its peer dependencies**:
 ```
-npm i @ng-dynamic-forms/ui-<library-name> -S
+npm i @ss-dynamic-forms/ui-<library-name> -S
 ```
 
 **Now just import the UI module**:
@@ -211,7 +211,7 @@ your component template:
 <form [formGroup]="formGroup">
 
     <dynamic-material-form [group]="formGroup" [model]="formModel"></dynamic-material-form>
-                               
+
 </form>
 ```
 
@@ -225,7 +225,7 @@ Alternatively you can **directly make use of a specific** `DynamicFormControlCom
 </form>
 ```
 
-Due to technical restrictions or external dependencies still being in development the support of major form controls 
+Due to technical restrictions or external dependencies still being in development the support of major form controls
 varies among UI packages. **See the following compatibility table**:
 
 |                	| ui-basic 	| ui-ngx-bootstrap 	| ui-foundation 	| ui-ionic 	| ui-kendo 	| ui-material 	| ui-ng-bootstrap 	| ui-primeng 	|
@@ -259,49 +259,49 @@ varies among UI packages. **See the following compatibility table**:
 In order to improve clarity it's often considered good practice to group forms into several logical `fieldset` sections.
 
 Thus NG Dynamic Forms supports nesting of form groups out of the box!
- 
+
 **1. Declare a** `DynamicFormGroupModel` within your form model and **add it's models to the** `group` **array**:
  ```typescript
 export const MY_FORM_MODEL: DynamicFormModel = [
- 
+
     new DynamicFormGroupModel({
- 
+
         id: "fullName",
         legend: "Name",
         group: [
             new DynamicInputModel({
-                
+
                 id: "firstName",
                 label: "First Name"
             }),
             new DynamicInputModel({
-                
+
                 id: "lastName",
                 label: "Last Name"
             })
         ]
     }),
-    
+
     new DynamicFormGroupModel({
- 
+
         id: "address",
         legend: "Address",
         group: [
             new DynamicInputModel({
-                    
+
                 id: "street",
                 label: "street"
             }),
             new DynamicInputModel({
-                
+
                 id: "zipCode",
                 label: "Zip Code"
             })
         ]
     })
-];  
+];
  ```
- 
+
 **2. Create a** `FormGroup` **and add a** `DynamicFormComponent`:
 ```typescript
 ngOnInit() {
@@ -313,7 +313,7 @@ ngOnInit() {
 <form [formGroup]="formGroup">
 
     <dynamic-material-form [group]="formGroup" [model]="formModel"></dynamic-material-form>
-                            
+
 </form>
 ```
 
@@ -331,9 +331,9 @@ Sometimes forms need to allow the user to dynamically add multiple items of the 
 
 Particularly for this reason Angular provides so called [**Form Arrays**](https://scotch.io/tutorials/how-to-build-nested-model-driven-forms-in-angular-2).
 
-Fortunately, NG Dynamic Forms is capable of managing such nested form structures!  
+Fortunately, NG Dynamic Forms is capable of managing such nested form structures!
 
-**1. Add a** `DynamicFormArrayModel` **to your form model**: 
+**1. Add a** `DynamicFormArrayModel` **to your form model**:
 ```typescript
 export const MY_FORM_MODEL: DynamicFormModel = [
 
@@ -381,7 +381,7 @@ this.formGroup = this.formService.createFormGroup(this.formModel);
 ```typescript
 ngOnInit() {
 
-    this.formArrayControl = this.formGroup.get("myFormArray") as FormArray; 
+    this.formArrayControl = this.formGroup.get("myFormArray") as FormArray;
     this.formArrayModel = this.formService.findById("myFormArray", this.formModel) as DynamicFormArrayModel;
 }
 
@@ -394,7 +394,7 @@ clear() {
 }
 ```
 
-Alright, works like a charm! 
+Alright, works like a charm!
 
 But what if we want to append an additional remove `<button>` for each array group?
 
@@ -403,20 +403,20 @@ Particularly for this case you can add a `<ng-template>` and **declare some cust
 <form [formGroup]="formGroup">
 
     <dynamic-material-form [group]="formGroup" [model]="formModel">
-    
+
         <ng-template modelId="myFormArray">
 
             <button type="button" (click)="onClick()">Label</button>
 
         </ng-template>
-                                
+
     </dynamic-material-form>
 
-</form>       
+</form>
 ```
 
-Whenever a `<ng-template>` is applied to a `DynamicFormArrayModel`, `NgTemplateOutletContext` **is internally bound to 
-the associated** `DynamicFormArrayGroupModel`. 
+Whenever a `<ng-template>` is applied to a `DynamicFormArrayModel`, `NgTemplateOutletContext` **is internally bound to
+the associated** `DynamicFormArrayGroupModel`.
 
 That means **you can access the group object and it's properties by either declaring a local default template variable** or individual local template variables.
 
@@ -426,17 +426,17 @@ That means **you can access the group object and it's properties by either decla
 <form [formGroup]="formGroup">
 
     <dynamic-material-form [group]="formGroup" [model]="formModel">
-    
+
         <ng-template modelId="myFormArray" let-group let-index="index" let-context="context">
 
             <button type="button" (click)="removeItem(context, index)">Remove Item</button>
             <button type="button" (click)="insertItem(group.context, group.index + 1)">Add Item</button>
 
         </ng-template>
-                                
+
     </dynamic-material-form>
 
-</form>       
+</form>
 ```
 
 This is extremely useful when you'd like to implement a remove or insert function:
@@ -470,27 +470,27 @@ At first we have to append the mandatory Bootstrap CSS class `form-horizontal` t
 <form class="form-horizontal" [formGroup]="formGroup">
 
     <dynamic-bootstrap-form [group]="formGroup" [model]="formModel"></dynamic-bootstrap-form>
-   
+
 </form>
 ```
 
-Now we need to position the `<label>` and the `form-control` using the Bootstrap [grid system](http://getbootstrap.com/css/#grid). 
+Now we need to position the `<label>` and the `form-control` using the Bootstrap [grid system](http://getbootstrap.com/css/#grid).
 
-But since all the template logic for the form controls is capsuled in the component scope we cannot directly attach those necessary CSS classes to markup. 
+But since all the template logic for the form controls is capsuled in the component scope we cannot directly attach those necessary CSS classes to markup.
 
 Don't worry!
 
-Arbitrary CSS classes can be provided for any form control by binding a `DynamicFormLayout` to a `DynamicFormControlComponent`. 
+Arbitrary CSS classes can be provided for any form control by binding a `DynamicFormLayout` to a `DynamicFormControlComponent`.
 
 A `DynamicFormLayout` is a simple object literal that associates a CSS class configuration object with a model id.
 
-By differentiating between `element` and `grid `context NG Dynamic Forms can automatically apply the 
+By differentiating between `element` and `grid `context NG Dynamic Forms can automatically apply the
 CSS class strings in the component template based on [position identifiers](http://ng2-dynamic-forms.udos86.de/docs/core/interfaces/_model_misc_dynamic_form_control_layout_model_.dynamicformcontrollayoutconfig.html):
 ```typescript
 export const MY_FORM_LAYOUT = {
-    
+
     "myFormControlModelId": {
-    
+
         element: {
             label: "control-label"
         },
@@ -499,9 +499,9 @@ export const MY_FORM_LAYOUT = {
             label: "col-sm-3"
         }
     },
-    
+
     "myOtherFormControlModelId": {
-        
+
         element: {
             label: "control-label"
         },
@@ -538,7 +538,7 @@ Finally we pass the form layout to our `DynamicFormComponent` via input binding:
     <dynamic-bootstrap-form [group]="formGroup"
                             [layout]="formLayout"
                             [model]="formModel"></dynamic-bootstrap-form>
-                               
+
 </form>
 ```
 
@@ -547,7 +547,7 @@ Using this approach we are able to strictly decouple layout information from pur
 
 ## Form Control Configuration
 
-No matter which UI library you're using, usually there is a set of basic properties that apply universally to a certain type of form control. 
+No matter which UI library you're using, usually there is a set of basic properties that apply universally to a certain type of form control.
 
 So, when picking e.g. a slider component, you'll always find an `@Input()` to control its minimum / maximum value and its orientation.
 
@@ -562,13 +562,13 @@ new DynamicSliderModel({
 })
 ```
 
-Furthermore, very often there are additional component features that are totally library-specific.  
+Furthermore, very often there are additional component features that are totally library-specific.
 
 So, when using e.g. Material there is a unique `@Input()` for inverting a slider component.
 
-NG Dynamic Forms gives you the freedom to utilize such an individual parameter, as well.  
+NG Dynamic Forms gives you the freedom to utilize such an individual parameter, as well.
 
-All you need to do is to put it in the `additional` configuration object of your `DynamicFormValueControlModel`: 
+All you need to do is to put it in the `additional` configuration object of your `DynamicFormValueControlModel`:
 ```typescript
 new DynamicSliderModel({
 
@@ -585,9 +585,9 @@ new DynamicSliderModel({
 
 ## Form Control Events
 
-When developing forms it's often useful to keep track of certain events that occur on a specific form control. 
+When developing forms it's often useful to keep track of certain events that occur on a specific form control.
 
-With NG Dynamic Forms you can directly listen to the three most common events, 
+With NG Dynamic Forms you can directly listen to the three most common events,
 `blur`, `change` and `focus`, both on `DynamicFormControlComponent` and `DynamicFormComponent`:
 ```html
 <dynamic-material-form [group]="formGroup"
@@ -622,12 +622,12 @@ interface DynamicFormControlEvent {
     type: string;
 }
 ```
-  
+
 But when using a UI library usually there are a bunch of additional events provided for certain form control components.
 
 Of course, NG Dynamic Forms won't let you down here.
 
-All custom UI events are pooled by an individual `@Output()` utilizing the respective library prefix.    
+All custom UI events are pooled by an individual `@Output()` utilizing the respective library prefix.
 ```html
 <dynamic-material-form [group]="formGroup"
                        [model]="formModel"
@@ -637,67 +637,67 @@ All custom UI events are pooled by an individual `@Output()` utilizing the respe
 
 ## Custom Templates
 
-As already mentioned, NG Dynamic Forms gives you a lot of freedom in adjusting your form layout via CSS classes. 
+As already mentioned, NG Dynamic Forms gives you a lot of freedom in adjusting your form layout via CSS classes.
 
-However there are situations where you would like to add custom markup for some of your form controls, as well. 
+However there are situations where you would like to add custom markup for some of your form controls, as well.
 
 In order to do so, just **put a** `<ng-template>` **inside your dynamic form control element** and **set a** `modelId` **property** to assign it to a certain control.
 ```html
 <form [formGroup]="formGroup">
-    
+
     <dynamic-material-form [group]="formGroup" [model]="formModel">
-                                    
+
         <ng-template modelId="myInput">
-        
+
             <p>Some custom markup</p>
-            
+
         </ng-template>
-        
+
     </dynamic-material-form>
-    
+
 </form>
 ```
 
 Alternatively **you can also apply** `modelType` **instead of** `modelId` **to reuse a template** for several form controls of the same type:
 ```html
 <form [formGroup]="formGroup">
-    
+
     <dynamic-material-form [group]="formGroup" [model]="formModel">
-                                    
+
         <ng-template modelType="ARRAY">
-        
+
             <p>Just some custom markup</p>
-            
+
         </ng-template>
 
     </dynamic-material-form>
-    
+
 </form>
 ```
 
-**And it's getting better!** 
+**And it's getting better!**
 
-Since for every template `NgTemplateOutletContext` is internally bound to the corresponding `DynamicFormControlModel` **you 
+Since for every template `NgTemplateOutletContext` is internally bound to the corresponding `DynamicFormControlModel` **you
 can use local template variables to reference your models' properties**:
 ```html
 <form [formGroup]="formGroup">
 
     <dynamic-material-form [group]="formGroup" [model]="formModel">
-                                    
+
         <ng-template modelId="myInput" let-id="id">
-        
+
             <p>Some custom markup for {{ id }}</p>
-            
-        </ng-template>                                               
-    
+
+        </ng-template>
+
     </dynamic-material-form>
-    
+
 </form>
 ```
 
 **Still not convinced?**
 
-Some UI libraries, e.g. Kendo UI, allow detailed customizing of form controls via [**template directives**](http://www.telerik.com/kendo-angular-ui/components/dropdowns/dropdownlist/#toc-templates). 
+Some UI libraries, e.g. Kendo UI, allow detailed customizing of form controls via [**template directives**](http://www.telerik.com/kendo-angular-ui/components/dropdowns/dropdownlist/#toc-templates).
 
 And you surely don't want to miss out on such a feature, do you?
 
@@ -708,42 +708,42 @@ All you have to do is to **add a** `as` **attribute to your template** and speci
 <form [formGroup]="formGroup">
 
     <dynamic-kendo-form [group]="formGroup" [model]="formModel">
-                        
+
         <ng-template modelId="myDropDownList" as="kendoDropDownListHeaderTemplate">
-        
+
             <p>My Kendo DropDown Header Template</p>
-            
-        </ng-template>                                               
-                                    
+
+        </ng-template>
+
     </dynamic-kendo-form>
-    
+
 </form>
 ```
 
 Finally **you can determine whether the template is rendered before or after the actual form control** by using the `align` property:
 ```html
 <form [formGroup]="formGroup">
-    
+
     <dynamic-material-form [group]="formGroup" [model]="formModel">
-                            
+
         <ng-template modelId="myInput" align="START">
-        
+
             <p>Some custom markup</p>
-            
+
         </ng-template>
-        
+
     </dynamic-material-form>
-    
+
 </form>
 ```
 
 
 ## Custom Validators
 
-Adding built-in Angular validators to any `DynamicFormControlModel` is plain and simple! 
+Adding built-in Angular validators to any `DynamicFormControlModel` is plain and simple!
 
 Just reference a function from `Validators` class by it's name in the `validators` or `asyncValidators` configuration object:
-```typescript 
+```typescript
 new DynamicInputModel({
 
     id: "myInput",
@@ -755,7 +755,7 @@ new DynamicInputModel({
 })
 ```
 
-So far so good! 
+So far so good!
 
 But what if you'd like to introduce some custom validator as well?
 ```typescript
@@ -775,12 +775,12 @@ Just **provide your validator functions via default** `NG_VALIDATORS` **or** `NG
         {provide: NG_VALIDATORS, useValue: myCustomValidator, multi: true}
     ]
 })
-``` 
+```
 
 > **Note:** thoughtram.io - [Custom Validators in Angular 2](http://blog.thoughtram.io/angular/2016/03/14/custom-validators-in-angular-2.html)
 
 **You're now ready to apply your custom validator to your model**:
-```typescript 
+```typescript
 new DynamicInputModel({
 
     id: "myInput",
@@ -798,7 +798,7 @@ Internally NG Dynamic Forms resolves a provided validator by it's function name.
 Though **when uglifying code** for production this **information is irretrievably lost**.
 
 To save you from this issue NG Dynamic Forms comes up with **a special** `InjectionToken<Map<string, Validator | ValidatorFactory>>` **named** `DYNAMIC_VALIDATORS` to which **you should additionally provide** any custom validator function:
-```typescript 
+```typescript
 providers: [
     {
         provide: NG_VALIDATORS,
@@ -814,7 +814,7 @@ providers: [
 ]
 ```
 You can also have multiple validators on the same input bu providing multiple key|value pairs in the useValue:
-```typescript 
+```typescript
 providers: [
     {
         provide: NG_VALIDATORS,
@@ -837,7 +837,7 @@ providers: [
 ```
 
 Another suitable solution for most situations would be to **make use of the alternate validator notation**:
-```typescript 
+```typescript
 new DynamicInputModel({
 
     id: "myInput",
@@ -888,7 +888,7 @@ import {
     DynamicFormLayout,
     DynamicFormLayoutService,
     DynamicFormValidationService,
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 import { MyCustomFormControlComponent } from "...";
 
 @Component({
@@ -957,18 +957,18 @@ providers: [
 
 ## Validation Messaging
 
-Delivering meaningful validation information to the user is an essential part of good form design. 
+Delivering meaningful validation information to the user is an essential part of good form design.
 
 Yet HTML5 already comes up with some [native functionality](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation)
-you very likely want to use [Angular mechanisms](http://blog.thoughtram.io/angular/2016/03/14/custom-validators-in-angular-2.html) 
+you very likely want to use [Angular mechanisms](http://blog.thoughtram.io/angular/2016/03/14/custom-validators-in-angular-2.html)
 to gain much more control over validation logic and it's corresponding message output.
 
 Avoiding a library too opinionated in the beginning, NG Dynamic Forms has originally been developed without any kind of obtrusive validation message system in mind.
 
-However, due to its very common use case and several developer requests, model-based error messaging has eventually become an optional **built-in feature**: 
+However, due to its very common use case and several developer requests, model-based error messaging has eventually become an optional **built-in feature**:
 
 **Just add an** `errorMessages` **object to any** `DynamicFormValueControlModel` and **assign error message templates based on** `Validators` **names**:
-```typescript 
+```typescript
 new DynamicInputModel({
 
         id: "myInput",
@@ -981,28 +981,28 @@ new DynamicInputModel({
         }
 })
 ```
-**Note:** Error message templates allow the following placeholders: 
+**Note:** Error message templates allow the following placeholders:
 
 * `{{ propertyName }}` where `propertyName` is a property of the model, for example `{{ label }}`.
 * `{{ validator.propertyName }}` where `propertyName` is a property of the object returned by validation function, for example `{{ validator.requiredPattern }}` in case of pattern validator.
 
-**Error messaging is automatically enabled whenever** `errorMessages` **are declared on a** `DynamicFormControlModel`. 
+**Error messaging is automatically enabled whenever** `errorMessages` **are declared on a** `DynamicFormControlModel`.
 
-**Still you are completely free to implement your own validation messaging.** 
+**Still you are completely free to implement your own validation messaging.**
 
 Follow the recommended approach below:
 
 **1. Create your own custom validation message component and make it accept a** `FormControl` **input**:
-```typescript 
+```typescript
 import { Component, Input } from "@angular/core";
 import { FormControl } from "@angular/forms";
- 
+
 @Component({
 
     selector: "validation-message",
     templateUrl: "./my-validation-message.component.html"
 })
- 
+
 export class MyValidationMessageComponent {
 
     @Input() control: FormControl;
@@ -1010,7 +1010,7 @@ export class MyValidationMessageComponent {
     constructor () {}
 }
 ```
- 
+
 **2. Create a template file** for your custom validation component and **implement it's logic** based on the `control` property:
 ```html
 <span *ngIf="control && control.hasError('required') && control.touched">Field is required</span>
@@ -1019,7 +1019,7 @@ export class MyValidationMessageComponent {
 **3. Define some validators** for your `DynamicFormControlModel`:
 ```typescript
 new DynamicInputModel({
-    
+
     id: "myInput",
     label: "My Input",
     validators: {
@@ -1028,22 +1028,22 @@ new DynamicInputModel({
 })
 ```
 
-**4. Add your validation component aside from the** `DynamicFormControlComponent` in your form component template 
+**4. Add your validation component aside from the** `DynamicFormControlComponent` in your form component template
 and **bind the** `FormControl` **reference via a local template variable**:
 ```html
 <form [formGroup]="formGroup">
 
     <ng-container *ngFor="let controlModel of formModel">
-    
+
         <dynamic-material-form-control [group]="formGroup"
                                        [model]="controlModel" #componentRef>
-        
+
             <validation-message [control]="componentRef.control"></validation-message>
-                                    
+
         </dynamic-material-form-control>
-        
+
     </ng-container>
-    
+
 </form>
 ```
 
@@ -1152,12 +1152,12 @@ new DynamicTextAreaModel(
 
 Sooner or later you likely want to persist your dynamic form model in order to restore it at some point in the future.
 
-That's why all `DynamicFormControlModel`s have been prepared to **properly export to JSON**: 
+That's why all `DynamicFormControlModel`s have been prepared to **properly export to JSON**:
 ```typescript
 storeForm() {
-    
+
     let json: string = JSON.stringify(this.formModel);
-    
+
     // ...store JSON in localStorage or transfer to server
 }
 ```
@@ -1167,9 +1167,9 @@ In order to recreate a form from JSON just make use of the corresponding functio
 restoreForm() {
 
     let json: string;
-    
+
     // ...load JSON from localStorage or server
-    
+
     this.formModel = this.formService.fromJSON(json);
 }
 ```
@@ -1179,11 +1179,11 @@ restoreForm() {
 
 By default NG Dynamic Forms **embraces prototypical inheritance** and forces you to use constructor functions when modelling a form.
 
-Depending on your general set-up or individual preferences sometimes it's more suitable to provide a form model in plain JSON, though. 
+Depending on your general set-up or individual preferences sometimes it's more suitable to provide a form model in plain JSON, though.
 
-Fortunately, **this is perfectly fine and supported**, as well. 
+Fortunately, **this is perfectly fine and supported**, as well.
 
-To specify a single JSON form control model just **assign the mandatory** `type` **property**: 
+To specify a single JSON form control model just **assign the mandatory** `type` **property**:
 ```typescript
 [
     {
@@ -1211,7 +1211,7 @@ To specify a single JSON form control model just **assign the mandatory** `type`
                 "value": "option-3"
             }
         ],
-        "value": "option-3"    
+        "value": "option-3"
     },
     {
         "type": "CHECKBOX",
@@ -1221,7 +1221,7 @@ To specify a single JSON form control model just **assign the mandatory** `type`
 ]
 ```
 
-After having asynchronously loaded the JSON form model into your application **don't forget to transform it** via `fromJSON()` **before creating** a `FormGroup`. 
+After having asynchronously loaded the JSON form model into your application **don't forget to transform it** via `fromJSON()` **before creating** a `FormGroup`.
 ```typescript
 ngOnInit() {
 
@@ -1273,26 +1273,26 @@ Please note that some UI libraries like Kendo UI come with their own text mask i
 
 ## Autocompletion
 
-Adding automatic input completion can be key factor to good user experience (especially on mobile devices) and should always 
-be considered when designing forms. 
+Adding automatic input completion can be key factor to good user experience (especially on mobile devices) and should always
+be considered when designing forms.
 
 That's why NG Dynamic Forms keeps you covered here, as well!
 
-Following HTML5 [standard behavior](http://www.w3schools.com/tags/att_form_autocomplete.asp), the `autocomplete` attribute is always bound to `on` for any `DynamicFormTextInputControl` form element by default. 
+Following HTML5 [standard behavior](http://www.w3schools.com/tags/att_form_autocomplete.asp), the `autocomplete` attribute is always bound to `on` for any `DynamicFormTextInputControl` form element by default.
 Nevertheless you can completely disable this feature by explicitly setting the corresponding model property to `off`:
 ```typescript
-import { AUTOCOMPLETE_OFF } from "@ng-dynamic-forms/core";
+import { AUTOCOMPLETE_OFF } from "@ss-dynamic-forms/core";
 
 let model = new DynamicInputModel({
-    
+
     id: "myInput",
     label: "My Input",
     autoComplete: AUTOCOMPLETE_OFF
 });
 ```
 
-Further on NG Dynamic Forms embraces the brand new HTML5 
-[**autofill detail tokens**](https://html.spec.whatwg.org/multipage/forms.html#autofill) by providing 
+Further on NG Dynamic Forms embraces the brand new HTML5
+[**autofill detail tokens**](https://html.spec.whatwg.org/multipage/forms.html#autofill) by providing
 `AUTOFILL_<TOKEN_NAME|FIELD_NAME>` string constants and `AutoFillUtils` to help you putting together a valid expression:
 
 > **Note:** Jason Grigsby - [Autofill: What web devs should know, but don’t](https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/)
@@ -1300,19 +1300,19 @@ Further on NG Dynamic Forms embraces the brand new HTML5
 ```typescript
 import {
     AutoFillUtils,
-    AUTOFILL_TOKEN_BILLING, 
-    AUTOFILL_FIELD_NAME, 
+    AUTOFILL_TOKEN_BILLING,
+    AUTOFILL_FIELD_NAME,
     AUTOCOMPLETE_ON
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 
 export class MySample {
 
     constructor() {
-    
+
         let expression = `${AUTOFILL_TOKEN_BILLING} ${AUTOFILL_FIELD_NAME}`;
 
         let model = new DynamicInputModel({
-        
+
             id: "myInput",
             label: "My Input",
             autoComplete: AutoFillUtils.validate(expression) ? expression : AUTOCOMPLETE_ON
@@ -1322,10 +1322,10 @@ export class MySample {
 ```
 
 Besides you can make user input more comfortable, providing HTML5 [**datalists**](http://www.w3schools.com/tags/tag_datalist.asp)
-by setting the `list` property of `DynamicInputControlModel`: 
+by setting the `list` property of `DynamicInputControlModel`:
 ```typescript
 new DynamicInputModel({
-    
+
     id: "myInput",
     label: "My Input",
     list: ["Alabama", "Alaska", "Arizona", "Arkansas"]
@@ -1341,11 +1341,11 @@ Your Angular forms will become highly maintainable as you don't have to care abo
 
 > **When should I use NG Dynamic Forms?**
 
-Whenever your Angular application is driven by multiple complex forms. 
+Whenever your Angular application is driven by multiple complex forms.
 
 > **When should I not use NG Dynamic Forms?**
 
-Whenever your Angular application has to display very simple forms only or extremely individual form UI.  
+Whenever your Angular application has to display very simple forms only or extremely individual form UI.
 
 > **Are there any downsides to using NG Dynamic Forms?**
 
@@ -1361,7 +1361,7 @@ Yes, namely [ng-formly](https://github.com/formly-js/ng-formly), [ngx-forms](htt
 
 > **How can I support this project besides contributing issues or code?**
 
-[Star](https://github.com/udos86/ng-dynamic-forms/stargazers) the repository.
+[Star](https://github.com/udos86/ss-dynamic-forms/stargazers) the repository.
 
 
 ## Appendix

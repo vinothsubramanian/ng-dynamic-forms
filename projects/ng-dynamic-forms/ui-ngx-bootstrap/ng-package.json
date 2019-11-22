@@ -1,13 +1,13 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/ng-dynamic-forms/ui-ngx-bootstrap",
+  "dest": "../../../dist/ss-dynamic-forms/ui-ngx-bootstrap",
   "lib": {
     "entryFile": "src/public-api.ts",
     "flatModuleFile": "ui-ngx-bootstrap",
     "umdId": "ngDynamicForms.ui.ngxBootstrap",
-    "amdId": "@ng-dynamic-forms/ui-ngx-bootstrap",
+    "amdId": "@ss-dynamic-forms/ui-ngx-bootstrap",
     "umdModuleIds": {
-      "@ng-dynamic-forms/core": "ngDynamicForms.core",
+      "@ss-dynamic-forms/core": "ngDynamicForms.core",
       "angular2-text-mask": "angular2-text-mask",
       "ngx-bootstrap/buttons": "ngx-bootstrap.buttons",
       "ngx-bootstrap/datepicker": "ngx-bootstrap.datepicker",

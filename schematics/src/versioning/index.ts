@@ -65,8 +65,8 @@ function setVersion(tree: Tree, version: string, projectPath: string) {
 
             json["version"] = version;
 
-            if (json["peerDependencies"] && json["peerDependencies"]["@ng-dynamic-forms/core"] !== undefined) {
-                json["peerDependencies"]["@ng-dynamic-forms/core"] = `^${version}`;
+            if (json["peerDependencies"] && json["peerDependencies"]["@ss-dynamic-forms/core"] !== undefined) {
+                json["peerDependencies"]["@ss-dynamic-forms/core"] = `^${version}`;
             }
 
             tree.overwrite(path, JSON.stringify(json, null, 2));

@@ -8,7 +8,7 @@ import {
     DynamicFormLayoutService,
     DynamicFormService,
     DynamicTemplateDirective,
-} from "@ng-dynamic-forms/core";
+} from "@ss-dynamic-forms/core";
 import { DynamicNGxBootstrapFormControlContainerComponent } from "./dynamic-ngx-bootstrap-form-control-container.component";
 
 @Component({

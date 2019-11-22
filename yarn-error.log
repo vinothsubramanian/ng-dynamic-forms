@@ -28,23 +28,23 @@ Trace:
 
 npm manifest:
   {
-    "name": "ng-dynamic-forms",
+    "name": "ss-dynamic-forms",
     "version": "7.2.1",
     "description": "A rapid form development library for Angular",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/vinothsubramanian/ng-dynamic-forms.git"
+      "url": "git+https://github.com/vinothsubramanian/ss-dynamic-forms.git"
     },
     "author": {
       "name": "Udo Schöfer",
       "email": "ng2-dynamic-forms@udos86.de",
-      "url": "https://github.com/vinothsubramanian/ng-dynamic-forms"
+      "url": "https://github.com/vinothsubramanian/ss-dynamic-forms"
     },
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/vinothsubramanian/ng-dynamic-forms/issues"
+      "url": "https://github.com/vinothsubramanian/ss-dynamic-forms/issues"
     },
-    "homepage": "https://github.com/vinothsubramanian/ng-dynamic-forms#readme",
+    "homepage": "https://github.com/vinothsubramanian/ss-dynamic-forms#readme",
     "scripts": {
       "ng": "ng",
       "start": "ng serve",
@@ -52,7 +52,7 @@ npm manifest:
       "test": "ng test",
       "lint": "ng lint",
       "e2e": "ng e2e",
-      "build:sample": "ng build ng-dynamic-forms",
+      "build:sample": "ng build ss-dynamic-forms",
       "build:lib": "npm run build:core && npm run build:ui-basic && npm run build:ui-bootstrap && npm run build:ui-foundation && npm run build:ui-ionic && npm run build:ui-kendo && npm run build:ui-material && npm run build:ui-ng-bootstrap && npm run build:ui-primeng",
       "build:core": "ng build @ss-dynamic-forms/core",
       "build:ui-basic": "ng build @ss-dynamic-forms/ui-basic",

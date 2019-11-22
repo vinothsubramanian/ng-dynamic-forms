@@ -19,14 +19,14 @@ import {
     DISABLED_MATCHER,
     HIDDEN_MATCHER,
     REQUIRED_MATCHER
-} from "@ng-dynamic-forms/core";
-import { DynamicFormsBasicUIModule } from "@ng-dynamic-forms/ui-basic";
-import { DynamicFormsFoundationUIModule } from "@ng-dynamic-forms/ui-foundation";
-import { DynamicFormsKendoUIModule } from "@ng-dynamic-forms/ui-kendo";
-import { DynamicFormsMaterialUIModule } from "@ng-dynamic-forms/ui-material";
-import { DynamicFormsNGBootstrapUIModule } from "@ng-dynamic-forms/ui-ng-bootstrap";
-import { DynamicFormsNGxBootstrapUIModule } from "@ng-dynamic-forms/ui-ngx-bootstrap";
-import { DynamicFormsPrimeNGUIModule } from "@ng-dynamic-forms/ui-primeng";
+} from "@ss-dynamic-forms/core";
+import { DynamicFormsBasicUIModule } from "@ss-dynamic-forms/ui-basic";
+import { DynamicFormsFoundationUIModule } from "@ss-dynamic-forms/ui-foundation";
+import { DynamicFormsKendoUIModule } from "@ss-dynamic-forms/ui-kendo";
+import { DynamicFormsMaterialUIModule } from "@ss-dynamic-forms/ui-material";
+import { DynamicFormsNGBootstrapUIModule } from "@ss-dynamic-forms/ui-ng-bootstrap";
+import { DynamicFormsNGxBootstrapUIModule } from "@ss-dynamic-forms/ui-ngx-bootstrap";
+import { DynamicFormsPrimeNGUIModule } from "@ss-dynamic-forms/ui-primeng";
 
 import { BasicSampleFormComponent } from "./ui-basic/basic-sample-form.component";
 import { FoundationSampleFormComponent } from "./ui-foundation/foundation-sample-form.component";

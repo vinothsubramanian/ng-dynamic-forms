@@ -20,64 +20,64 @@
     ],
     "paths": {
       "@ss-dynamic-forms/core": [
-        "dist/ng-dynamic-forms/core"
+        "dist/ss-dynamic-forms/core"
       ],
       "@ss-dynamic-forms/core/*": [
-        "dist/ng-dynamic-forms/core/*"
+        "dist/ss-dynamic-forms/core/*"
       ],
       "@ss-dynamic-forms/ui-basic": [
-        "dist/ng-dynamic-forms/ui-basic"
+        "dist/ss-dynamic-forms/ui-basic"
       ],
       "@ss-dynamic-forms/ui-basic/*": [
-        "dist/ng-dynamic-forms/ui-basic/*"
+        "dist/ss-dynamic-forms/ui-basic/*"
       ],
       "@ss-dynamic-forms/ui-bootstrap": [
-        "dist/ng-dynamic-forms/ui-bootstrap"
+        "dist/ss-dynamic-forms/ui-bootstrap"
       ],
       "@ss-dynamic-forms/ui-bootstrap/*": [
-        "dist/ng-dynamic-forms/ui-bootstrap/*"
+        "dist/ss-dynamic-forms/ui-bootstrap/*"
       ],
       "@ss-dynamic-forms/ui-foundation": [
-        "dist/ng-dynamic-forms/ui-foundation"
+        "dist/ss-dynamic-forms/ui-foundation"
       ],
       "@ss-dynamic-forms/ui-foundation/*": [
-        "dist/ng-dynamic-forms/ui-foundation/*"
+        "dist/ss-dynamic-forms/ui-foundation/*"
       ],
       "@ss-dynamic-forms/ui-ionic": [
-        "dist/ng-dynamic-forms/ui-ionic"
+        "dist/ss-dynamic-forms/ui-ionic"
       ],
       "@ss-dynamic-forms/ui-ionic/*": [
-        "dist/ng-dynamic-forms/ui-ionic/*"
+        "dist/ss-dynamic-forms/ui-ionic/*"
       ],
       "@ss-dynamic-forms/ui-kendo": [
-        "dist/ng-dynamic-forms/ui-kendo"
+        "dist/ss-dynamic-forms/ui-kendo"
       ],
       "@ss-dynamic-forms/ui-kendo/*": [
-        "dist/ng-dynamic-forms/ui-kendo/*"
+        "dist/ss-dynamic-forms/ui-kendo/*"
       ],
       "@ss-dynamic-forms/ui-material": [
-        "dist/ng-dynamic-forms/ui-material"
+        "dist/ss-dynamic-forms/ui-material"
       ],
       "@ss-dynamic-forms/ui-material/*": [
-        "dist/ng-dynamic-forms/ui-material/*"
+        "dist/ss-dynamic-forms/ui-material/*"
       ],
       "@ss-dynamic-forms/ui-ng-bootstrap": [
-        "dist/ng-dynamic-forms/ui-ng-bootstrap"
+        "dist/ss-dynamic-forms/ui-ng-bootstrap"
       ],
       "@ss-dynamic-forms/ui-ng-bootstrap/*": [
-        "dist/ng-dynamic-forms/ui-ng-bootstrap/*"
+        "dist/ss-dynamic-forms/ui-ng-bootstrap/*"
       ],
       "@ss-dynamic-forms/ui-primeng": [
-        "dist/ng-dynamic-forms/ui-primeng"
+        "dist/ss-dynamic-forms/ui-primeng"
       ],
       "@ss-dynamic-forms/ui-primeng/*": [
-        "dist/ng-dynamic-forms/ui-primeng/*"
+        "dist/ss-dynamic-forms/ui-primeng/*"
       ],
-      "@ng-dynamic-forms/ui-ngx-bootstrap": [
-        "dist/ng-dynamic-forms/ui-ngx-bootstrap"
+      "@ss-dynamic-forms/ui-ngx-bootstrap": [
+        "dist/ss-dynamic-forms/ui-ngx-bootstrap"
       ],
-      "@ng-dynamic-forms/ui-ngx-bootstrap/*": [
-        "dist/ng-dynamic-forms/ui-ngx-bootstrap/*"
+      "@ss-dynamic-forms/ui-ngx-bootstrap/*": [
+        "dist/ss-dynamic-forms/ui-ngx-bootstrap/*"
       ]
     }
   }
