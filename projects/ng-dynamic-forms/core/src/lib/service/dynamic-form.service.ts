@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, InjectionToken, Type, Inject, Optional } from "@angular/core";
 import { AbstractControl, FormArray, FormControl, FormGroup } from "@angular/forms";
 import { AbstractControlOptions, FormHooks } from "@angular/forms/src/model";
 import { DynamicFormControlModel } from "../model/dynamic-form-control.model";
@@ -48,12 +48,19 @@ import { DynamicValidatorsConfig } from "../model/misc/dynamic-form-control-vali
 import { maskFromString, parseReviver } from "../utils/json.utils";
 import { isString } from "../utils/core.utils";
 
+export type DynamicCreateFormGroupModelTypeFn = (model: DynamicFormControlModel) => Type<string> | null;
+export const DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN
+    = new InjectionToken<DynamicCreateFormGroupModelTypeFn>("DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN");
+
 @Injectable({
     providedIn: "root"
 })
 export class DynamicFormService {
 
-    constructor(private validationService: DynamicFormValidationService) {}
+    constructor(private validationService: DynamicFormValidationService,
+        @Inject(DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN) @Optional() private readonly DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN: any) {
+            this.DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN = DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN as DynamicCreateFormGroupModelTypeFn;
+         }
 
 
     private createAbstractControlOptions(validatorsConfig: DynamicValidatorsConfig | null = null,
@@ -98,8 +105,12 @@ export class DynamicFormService {
         formModel.forEach(model => {
 
             model.parent = parent;
+            let modelType = model.type;
+            if (this.DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN) {
+                modelType = this.DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN(model) || model.type;
+            }
 
-            switch (model.type) {
+            switch (modelType) {
 
                 case DYNAMIC_FORM_CONTROL_TYPE_ARRAY:
 

@@ -5,9 +5,9 @@
     "entryFile": "src/public-api.ts",
     "flatModuleFile": "ui-material",
     "umdId": "ngDynamicForms.ui.material",
-    "amdId": "@ng-dynamic-forms/ui-material",
+    "amdId": "@ss-dynamic-forms/ui-material",
     "umdModuleIds": {
-      "@ng-dynamic-forms/core": "ngDynamicForms.core",
+      "@ss-dynamic-forms/core": "ngDynamicForms.core",
       "angular2-text-mask": "angular2-text-mask"
     }
   }

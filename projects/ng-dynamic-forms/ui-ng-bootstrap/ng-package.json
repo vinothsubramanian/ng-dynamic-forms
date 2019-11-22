@@ -5,10 +5,10 @@
     "entryFile": "src/public-api.ts",
     "flatModuleFile": "ui-ng-bootstrap",
     "umdId": "ngDynamicForms.ui.ngbootstrap",
-    "amdId": "@ng-dynamic-forms/ui-ng-bootstrap",
+    "amdId": "@ss-dynamic-forms/ui-ng-bootstrap",
     "umdModuleIds": {
       "@ng-bootstrap/ng-bootstrap": "ngb",
-      "@ng-dynamic-forms/core": "ngDynamicForms.core",
+      "@ss-dynamic-forms/core": "ngDynamicForms.core",
       "angular2-text-mask": "angular2-text-mask"
     }
   }

@@ -5,6 +5,6 @@
     "entryFile": "src/public-api.ts",
     "flatModuleFile": "core",
     "umdId": "ngDynamicForms.core",
-    "amdId": "@ng-dynamic-forms/core"
+    "amdId": "@ss-dynamic-forms/core"
   }
 }

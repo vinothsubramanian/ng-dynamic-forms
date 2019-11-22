@@ -135,7 +135,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/core": {
+    "@ss-dynamic-forms/core": {
       "root": "projects/ng-dynamic-forms/core",
       "sourceRoot": "projects/ng-dynamic-forms/core/src",
       "projectType": "library",
@@ -170,7 +170,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-basic": {
+    "@ss-dynamic-forms/ui-basic": {
       "root": "projects/ng-dynamic-forms/ui-basic",
       "sourceRoot": "projects/ng-dynamic-forms/ui-basic/src",
       "projectType": "library",
@@ -205,7 +205,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-bootstrap": {
+    "@ss-dynamic-forms/ui-bootstrap": {
       "root": "projects/ng-dynamic-forms/ui-bootstrap",
       "sourceRoot": "projects/ng-dynamic-forms/ui-bootstrap/src",
       "projectType": "library",
@@ -240,7 +240,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-foundation": {
+    "@ss-dynamic-forms/ui-foundation": {
       "root": "projects/ng-dynamic-forms/ui-foundation",
       "sourceRoot": "projects/ng-dynamic-forms/ui-foundation/src",
       "projectType": "library",
@@ -275,7 +275,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-ionic": {
+    "@ss-dynamic-forms/ui-ionic": {
       "root": "projects/ng-dynamic-forms/ui-ionic",
       "sourceRoot": "projects/ng-dynamic-forms/ui-ionic/src",
       "projectType": "library",
@@ -310,7 +310,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-kendo": {
+    "@ss-dynamic-forms/ui-kendo": {
       "root": "projects/ng-dynamic-forms/ui-kendo",
       "sourceRoot": "projects/ng-dynamic-forms/ui-kendo/src",
       "projectType": "library",
@@ -345,7 +345,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-material": {
+    "@ss-dynamic-forms/ui-material": {
       "root": "projects/ng-dynamic-forms/ui-material",
       "sourceRoot": "projects/ng-dynamic-forms/ui-material/src",
       "projectType": "library",
@@ -380,7 +380,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-ng-bootstrap": {
+    "@ss-dynamic-forms/ui-ng-bootstrap": {
       "root": "projects/ng-dynamic-forms/ui-ng-bootstrap",
       "sourceRoot": "projects/ng-dynamic-forms/ui-ng-bootstrap/src",
       "projectType": "library",
@@ -415,7 +415,7 @@
         }
       }
     },
-    "@ng-dynamic-forms/ui-primeng": {
+    "@ss-dynamic-forms/ui-primeng": {
       "root": "projects/ng-dynamic-forms/ui-primeng",
       "sourceRoot": "projects/ng-dynamic-forms/ui-primeng/src",
       "projectType": "library",

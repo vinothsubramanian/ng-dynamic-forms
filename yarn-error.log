@@ -1,0 +1,150 @@
+Arguments:
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH:
+  C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python\Scripts\;C:\Python\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;H:\Flutter\flutter\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Zerynth\ztc\windows64;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Common Files\Seagate\SnapAPI\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\Raji\Desktop\magento\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Go\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\Python\Scripts\;C:\Python\;C:\Users\Raji\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\tools\dart-sdk\bin;C:\Users\Raji\AppData\Roaming\Pub\Cache\bin;C:\Users\Raji\AppData\Roaming\Composer\vendor\bin;C:\Users\Raji\.dotnet\tools;C:\tools\bazel;C:\Program Files\heroku\bin;C:\Users\Raji\AppData\Roaming\npm;C:\Users\Raji\AppData\Local\Yarn\bin;C:\tools\ffmpeg\bin;C:\Users\Raji\go\bin;C:\Users\Raji\AppData\Local\GitHubDesktop\bin
+
+Yarn version:
+  1.12.3
+
+Node version:
+  10.14.2
+
+Platform:
+  win32 x64
+
+Trace:
+  Error: https://registry.yarnpkg.com/@angular/common/-/common-7.2.14.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:129645:19)
+      at Object.onceWrapper (events.js:273:13)
+      at ClientRequest.emit (events.js:182:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:662:40)
+      at Object.onceWrapper (events.js:273:13)
+      at TLSSocket.emit (events.js:182:13)
+      at TLSSocket.Socket._onTimeout (net.js:453:8)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+
+npm manifest:
+  {
+    "name": "ng-dynamic-forms",
+    "version": "7.2.1",
+    "description": "A rapid form development library for Angular",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vinothsubramanian/ng-dynamic-forms.git"
+    },
+    "author": {
+      "name": "Udo Schöfer",
+      "email": "ng2-dynamic-forms@udos86.de",
+      "url": "https://github.com/vinothsubramanian/ng-dynamic-forms"
+    },
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/vinothsubramanian/ng-dynamic-forms/issues"
+    },
+    "homepage": "https://github.com/vinothsubramanian/ng-dynamic-forms#readme",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e",
+      "build:sample": "ng build ng-dynamic-forms",
+      "build:lib": "npm run build:core && npm run build:ui-basic && npm run build:ui-bootstrap && npm run build:ui-foundation && npm run build:ui-ionic && npm run build:ui-kendo && npm run build:ui-material && npm run build:ui-ng-bootstrap && npm run build:ui-primeng",
+      "build:core": "ng build @ss-dynamic-forms/core",
+      "build:ui-basic": "ng build @ss-dynamic-forms/ui-basic",
+      "build:ui-bootstrap": "ng build @ss-dynamic-forms/ui-bootstrap",
+      "build:ui-foundation": "ng build @ss-dynamic-forms/ui-foundation",
+      "build:ui-ionic": "ng build @ss-dynamic-forms/ui-ionic",
+      "build:ui-kendo": "ng build @ss-dynamic-forms/ui-kendo",
+      "build:ui-material": "ng build @ss-dynamic-forms/ui-material",
+      "build:ui-ng-bootstrap": "ng build @ss-dynamic-forms/ui-ng-bootstrap",
+      "build:ui-primeng": "ng build @ss-dynamic-forms/ui-primeng",
+      "test:core": "ng test @ss-dynamic-forms/core --code-coverage",
+      "test:ui-basic": "ng test @ss-dynamic-forms/ui-basic --code-coverage",
+      "test:ui-bootstrap": "ng test @ss-dynamic-forms/ui-bootstrap --code-coverage",
+      "test:ui-foundation": "ng test @ss-dynamic-forms/ui-foundation --code-coverage",
+      "test:ui-ionic": "ng test @ss-dynamic-forms/ui-ionic --code-coverage",
+      "test:ui-kendo": "ng test @ss-dynamic-forms/ui-kendo --code-coverage",
+      "test:ui-material": "ng test @ss-dynamic-forms/ui-material --code-coverage",
+      "test:ui-ng-bootstrap": "ng test @ss-dynamic-forms/ui-ng-bootstrap --code-coverage",
+      "test:ui-primeng": "ng test @ss-dynamic-forms/ui-primeng --code-coverage",
+      "version:major": "gulp version:major",
+      "version:minor": "gulp version:minor",
+      "version:patch": "gulp version:patch",
+      "publish": "./publish.sh"
+    },
+    "private": false,
+    "dependencies": {
+      "@angular/animations": "~7.2.1",
+      "@angular/cdk": "^7.3.7",
+      "@angular/common": "~7.2.1",
+      "@angular/compiler": "~7.2.1",
+      "@angular/core": "~7.2.1",
+      "@angular/forms": "~7.2.1",
+      "@angular/http": "^7.2.13",
+      "@angular/material": "^7.3.7",
+      "@angular/platform-browser": "~7.2.1",
+      "@angular/platform-browser-dynamic": "~7.2.1",
+      "@angular/router": "~7.2.1",
+      "@ionic/angular": "^4.3.0",
+      "@ng-bootstrap/ng-bootstrap": "^4.1.1",
+      "@progress/kendo-angular-dateinputs": "^3.7.2",
+      "@progress/kendo-angular-dropdowns": "^3.5.3",
+      "@progress/kendo-angular-inputs": "^4.2.1",
+      "@progress/kendo-angular-intl": "^1.7.0",
+      "@progress/kendo-angular-l10n": "^1.4.0",
+      "@progress/kendo-angular-upload": "^4.2.2",
+      "@progress/kendo-theme-default": "^3.5.1",
+      "angular2-text-mask": "^9.0.0",
+      "bootstrap": "^3.4.1",
+      "core-js": "^2.5.4",
+      "foundation-sites": "^6.5.3",
+      "hammerjs": "^2.0.8",
+      "ngx-bootstrap": "^4.0.1",
+      "primeicons": "^1.0.0",
+      "primeng": "^7.1.1",
+      "quill": "^1.3.6",
+      "rxjs": "~6.3.3",
+      "rxjs-compat": "^6.4.0",
+      "tslib": "^1.9.0",
+      "zone.js": "~0.8.26"
+    },
+    "devDependencies": {
+      "@angular-devkit/build-angular": "~0.13.0",
+      "@angular-devkit/build-ng-packagr": "~0.13.0",
+      "@angular/cli": "~7.3.8",
+      "@angular/compiler-cli": "~7.2.1",
+      "@angular/language-service": "~7.2.1",
+      "@types/jasmine": "~2.8.8",
+      "@types/jasminewd2": "~2.0.3",
+      "@types/node": "~8.9.4",
+      "codelyzer": "~4.5.0",
+      "gulp": "^3.9.1",
+      "gulp-replace": "^1.0.0",
+      "gulp-util": "^3.0.8",
+      "jasmine-core": "~2.99.1",
+      "jasmine-spec-reporter": "~4.2.1",
+      "karma": "~4.0.0",
+      "karma-chrome-launcher": "~2.2.0",
+      "karma-coverage-istanbul-reporter": "~2.0.1",
+      "karma-jasmine": "~1.1.2",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "ng-packagr": "^4.2.0",
+      "protractor": "~5.4.0",
+      "ts-node": "~7.0.0",
+      "tsickle": ">=0.34.0",
+      "tslib": "^1.9.0",
+      "tslint": "~5.11.0",
+      "typescript": "~3.2.2"
+    }
+  }
+
+yarn manifest:
+  No manifest
+
+Lockfile:
+  No lockfile

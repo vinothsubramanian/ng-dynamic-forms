@@ -32,7 +32,7 @@ function incrementVersion(pkg, src, versionNumber, dest) {
 
         const regExVersionString   = /(\d+).(\d+).(\d+)/,
               regExVersionField    = /("version":\s)"\d+.\d+.\d+"/,
-              regExDependencyField = /("@ng-dynamic-forms\/[a-z\-]+":\s)"\^\d+.\d+.\d+"/g,
+              regExDependencyField = /("@ss-dynamic-forms\/[a-z\-]+":\s)"\^\d+.\d+.\d+"/g,
               newVersionString     = pkg.version.replace(regExVersionString, replaceVersionString);
 
         util.log(`Incrementing version to ${util.colors.magenta(newVersionString)}`);

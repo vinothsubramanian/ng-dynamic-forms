@@ -1,6 +1,6 @@
 {
-  "name": "@ng-dynamic-forms/core",
-  "version": "7.2.0",
+  "name": "@ss-dynamic-forms/core",
+  "version": "7.2.1",
   "description": "A rapid form development library for Angular",
   "keywords": [
     "angular",
@@ -10,9 +10,9 @@
     "ng dynamic forms",
     "reactive forms"
   ],
-  "homepage": "https://github.com/udos86/ng-dynamic-forms#readme",
+  "homepage": "https://github.com/vinothsubramanian/ng-dynamic-forms#readme",
   "bugs": {
-    "url": "https://github.com/udos86/ng-dynamic-forms/issues"
+    "url": "https://github.com/vinothsubramanian/ng-dynamic-forms/issues"
   },
   "license": "ISC",
   "author": {
@@ -25,7 +25,7 @@
   "typings": "./core.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udos86/ng-dynamic-forms.git"
+    "url": "git+https://github.com/vinothsubramanian/ng-dynamic-forms.git"
   },
   "peerDependencies": {
     "@angular/common": "^7.0.0",

@@ -937,6 +937,23 @@ providers: [
 ]
 ```
 
+If need provide **provide** `DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN` **to overwrite the default mapping** when creating form group. Function can return either of DYNAMIC_FORM_CONTROL_TYPE_GROUP or DYNAMIC_FORM_CONTROL_TYPE_CHECKBOX_GROUP or DYNAMIC_FORM_CONTROL_TYPE_ARRAY;
+```typescript
+providers: [
+  {
+    provide: DYNAMIC_CREATE_FORMGROUP_MODEL_TYPE_FN,
+    useValue: (model: DynamicFormControlModel): Type<string> | null  => {
+
+      switch (model.type) {
+
+        case /* corresponding DynamicFormControlModel */:
+          return DYNAMIC_FORM_CONTROL_TYPE_GROUP;
+
+        }
+     }
+  }
+]
+```
 
 ## Validation Messaging
 
