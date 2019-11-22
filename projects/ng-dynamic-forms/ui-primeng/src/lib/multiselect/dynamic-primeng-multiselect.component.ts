@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { MultiSelect } from "primeng/primeng";
 import {
@@ -11,8 +11,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-multiselect",
-    templateUrl: "./dynamic-primeng-multiselect.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-primeng-multiselect.component.html"
 })
 export class DynamicPrimeNGMultiSelectComponent extends DynamicFormControlComponent {
 
@@ -24,7 +23,7 @@ export class DynamicPrimeNGMultiSelectComponent extends DynamicFormControlCompon
     @Output() change: EventEmitter<any> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pMultiSelect") pMultiSelect: MultiSelect;
+    @ViewChild("pMultiSelect", { static: true }) pMultiSelect: MultiSelect;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Dropdown } from "primeng/primeng";
 import {
@@ -13,8 +13,7 @@ import { DynamicPrimeNGTemplateableFormControlComponent } from "../dynamic-prime
 
 @Component({
     selector: "dynamic-primeng-dropdown",
-    templateUrl: "./dynamic-primeng-dropdown.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-primeng-dropdown.component.html"
 })
 export class DynamicPrimeNGDropdownComponent extends DynamicPrimeNGTemplateableFormControlComponent {
 
@@ -29,7 +28,7 @@ export class DynamicPrimeNGDropdownComponent extends DynamicPrimeNGTemplateableF
     @Output() change: EventEmitter<any> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pDropdown") pDropdown: Dropdown;
+    @ViewChild("pDropdown", { static: true }) pDropdown: Dropdown;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

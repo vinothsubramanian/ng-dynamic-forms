@@ -208,7 +208,7 @@ describe("DynamicPrimeNGFormControlContainerComponent test suite", () => {
 
         spyOn(component, "onModelValueUpdates");
 
-        (testModel as DynamicInputModel).valueUpdates.next("test");
+        (testModel as DynamicInputModel).value = "test";
 
         expect(component.onModelValueUpdates).toHaveBeenCalled();
     });
@@ -217,18 +217,9 @@ describe("DynamicPrimeNGFormControlContainerComponent test suite", () => {
 
         spyOn(component, "onModelDisabledUpdates");
 
-        testModel.disabledUpdates.next(true);
+        testModel.disabled = true;
 
         expect(component.onModelDisabledUpdates).toHaveBeenCalled();
-    });
-
-    it("should update control activation when model required property changes", () => {
-
-        spyOn(component, "onModelRequiredUpdates");
-
-        testModel.requiredUpdates.next(true);
-
-        expect(component.onModelRequiredUpdates).toHaveBeenCalled();
     });
 
     it("should map a form control model to a form control component", () => {

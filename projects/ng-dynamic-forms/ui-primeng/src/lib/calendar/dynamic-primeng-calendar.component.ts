@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Calendar } from "primeng/primeng";
 import {
@@ -14,8 +14,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-calendar",
-    templateUrl: "./dynamic-primeng-calendar.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-primeng-calendar.component.html"
 })
 export class DynamicPrimeNGCalendarComponent extends DynamicFormControlComponent {
 
@@ -28,7 +27,7 @@ export class DynamicPrimeNGCalendarComponent extends DynamicFormControlComponent
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pCalendar") pCalendar: Calendar;
+    @ViewChild("pCalendar", { static: true }) pCalendar: Calendar;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

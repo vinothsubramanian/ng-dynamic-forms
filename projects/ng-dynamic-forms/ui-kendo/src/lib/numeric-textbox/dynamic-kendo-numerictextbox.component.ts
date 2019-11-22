@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { NumericTextBoxComponent } from "@progress/kendo-angular-inputs";
 import {
@@ -11,8 +11,7 @@ import {
 
 @Component({
     selector: "dynamic-kendo-numerictextbox",
-    templateUrl: "./dynamic-kendo-numerictextbox.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-kendo-numerictextbox.component.html"
 })
 export class DynamicKendoNumericTextBoxComponent extends DynamicFormControlComponent {
 
@@ -24,7 +23,7 @@ export class DynamicKendoNumericTextBoxComponent extends DynamicFormControlCompo
     @Output() change: EventEmitter<any> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("kendoNumericTextBox") kendoNumericTextBox: NumericTextBoxComponent;
+    @ViewChild("kendoNumericTextBox", { static: true }) kendoNumericTextBox: NumericTextBoxComponent;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

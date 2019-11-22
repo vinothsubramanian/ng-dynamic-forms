@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { CalendarComponent } from "@progress/kendo-angular-dateinputs";
 import {
@@ -14,8 +14,7 @@ import { DynamicKendoTemplateableFormControlComponent } from "../dynamic-kendo-t
 
 @Component({
     selector: "dynamic-kendo-calendar",
-    templateUrl: "./dynamic-kendo-calendar.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-kendo-calendar.component.html"
 })
 export class DynamicKendoCalendarComponent extends DynamicKendoTemplateableFormControlComponent {
 
@@ -31,7 +30,7 @@ export class DynamicKendoCalendarComponent extends DynamicKendoTemplateableFormC
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("kendoCalendar") kendoCalendar: CalendarComponent;
+    @ViewChild("kendoCalendar", { static: true }) kendoCalendar: CalendarComponent;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

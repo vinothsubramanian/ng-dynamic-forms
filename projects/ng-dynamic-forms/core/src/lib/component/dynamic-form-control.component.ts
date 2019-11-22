@@ -32,7 +32,8 @@ export abstract class DynamicFormControlComponent implements DynamicFormControl 
     focus: EventEmitter<any>;
 
     protected constructor(protected layoutService: DynamicFormLayoutService,
-                          protected validationService: DynamicFormValidationService) {}
+                          protected validationService: DynamicFormValidationService) {
+    }
 
     get control(): AbstractControl | never {
 
@@ -69,9 +70,10 @@ export abstract class DynamicFormControlComponent implements DynamicFormControl 
         return this.model.hasErrorMessages && this.control.touched && !this.hasFocus && this.isInvalid;
     }
 
-    getClass(context: DynamicFormControlLayoutContext, place: DynamicFormControlLayoutPlace, model: DynamicFormControlModel = this.model): string {
+    getClass(context: DynamicFormControlLayoutContext, place: DynamicFormControlLayoutPlace,
+             model: DynamicFormControlModel = this.model): string {
 
-        let controlLayout = (this.layout && this.layout[model.id]) || model.layout as DynamicFormControlLayout;
+        const controlLayout = this.layoutService.findByModel(model, this.layout) || model.layout as DynamicFormControlLayout;
 
         return this.layoutService.getClass(controlLayout, context, place);
     }
@@ -99,12 +101,12 @@ export abstract class DynamicFormControlComponent implements DynamicFormControl 
 
         this.onChange($event);
 
-        model.valueUpdates.next(($event.target as HTMLInputElement).checked);
+        model.value = ($event.target as HTMLInputElement).checked;
     }
 
     onCustomEvent($event: any, type: string | null = null, bypass: boolean = false) {
 
-        let emitter = this.customEvent as EventEmitter<DynamicFormControlCustomEvent>;
+        const emitter = this.customEvent as EventEmitter<DynamicFormControlCustomEvent>;
 
         if (bypass) {
 

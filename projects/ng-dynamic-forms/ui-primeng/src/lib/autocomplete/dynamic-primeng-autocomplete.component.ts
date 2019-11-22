@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { AutoComplete } from "primeng/primeng";
 import {
@@ -14,8 +14,7 @@ import { DynamicPrimeNGTemplateableFormControlComponent } from "../dynamic-prime
 
 @Component({
     selector: "dynamic-primeng-autocomplete",
-    templateUrl: "./dynamic-primeng-autocomplete.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    templateUrl: "./dynamic-primeng-autocomplete.component.html"
 })
 export class DynamicPrimeNGAutoCompleteComponent extends DynamicPrimeNGTemplateableFormControlComponent {
 
@@ -33,7 +32,7 @@ export class DynamicPrimeNGAutoCompleteComponent extends DynamicPrimeNGTemplatea
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pAutoComplete") pAutoComplete: AutoComplete;
+    @ViewChild("pAutoComplete", { static: true }) pAutoComplete: AutoComplete;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {
