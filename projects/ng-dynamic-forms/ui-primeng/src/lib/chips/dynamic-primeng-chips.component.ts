@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Chips } from "primeng/primeng";
 import {
@@ -14,7 +14,7 @@ import { DynamicPrimeNGTemplateableFormControlComponent } from "../dynamic-prime
 
 @Component({
     selector: "dynamic-primeng-chips",
-    templateUrl: "./dynamic-primeng-chips.component.html",
+    templateUrl: "./dynamic-primeng-chips.component.html"
 })
 export class DynamicPrimeNGChipsComponent extends DynamicPrimeNGTemplateableFormControlComponent {
 
@@ -30,7 +30,7 @@ export class DynamicPrimeNGChipsComponent extends DynamicPrimeNGTemplateableForm
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pChips") pChips: Chips;
+    @ViewChild("pChips", { static: true }) pChips: Chips;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

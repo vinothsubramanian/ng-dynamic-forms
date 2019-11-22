@@ -1,5 +1,4 @@
 import {
-    ChangeDetectionStrategy,
     Component,
     EventEmitter,
     Input,
@@ -22,8 +21,7 @@ import { DynamicKendoTemplateableFormControlComponent } from "../dynamic-kendo-t
 
 @Component({
     selector: "dynamic-kendo-dropdownlist",
-    templateUrl: "./dynamic-kendo-dropdownlist.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-kendo-dropdownlist.component.html"
 })
 export class DynamicKendoDropdownListComponent extends DynamicKendoTemplateableFormControlComponent {
 
@@ -39,7 +37,7 @@ export class DynamicKendoDropdownListComponent extends DynamicKendoTemplateableF
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("kendoDropDownList") kendoDropDownList: DropDownListComponent;
+    @ViewChild("kendoDropDownList", { static: true }) kendoDropDownList: DropDownListComponent;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

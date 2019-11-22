@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Rating } from "primeng/primeng";
 import {
@@ -12,7 +12,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-rating",
-    templateUrl: "./dynamic-primeng-rating.component.html",
+    templateUrl: "./dynamic-primeng-rating.component.html"
 })
 export class DynamicPrimeNGRatingComponent extends DynamicFormControlComponent {
 
@@ -25,7 +25,7 @@ export class DynamicPrimeNGRatingComponent extends DynamicFormControlComponent {
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pRating") pRating: Rating;
+    @ViewChild("pRating", { static: true }) pRating: Rating;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

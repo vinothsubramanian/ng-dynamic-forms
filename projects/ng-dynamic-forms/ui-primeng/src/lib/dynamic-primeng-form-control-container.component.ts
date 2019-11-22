@@ -33,14 +33,15 @@ import {
     DynamicFormControlContainerComponent,
     DynamicFormControlEvent,
     DynamicFormControlModel,
-    DynamicFormInstancesService,
+    DynamicFormComponentService,
     DynamicFormLayout,
     DynamicFormLayoutService,
+    DynamicFormRelationService,
     DynamicFormValidationService,
     DynamicInputModel,
     DynamicSelectModel,
     DynamicTemplateDirective
-} from "@ss-dynamic-forms/core";
+} from "@ng-dynamic-forms/core";
 import { DynamicPrimeNGCheckboxComponent } from "./checkbox/dynamic-primeng-checkbox.component";
 import { DynamicPrimeNGColorPickerComponent } from "./colorpicker/dynamic-primeng-colorpicker.component";
 import { DynamicPrimeNGCalendarComponent } from "./calendar/dynamic-primeng-calendar.component";
@@ -79,28 +80,19 @@ export class DynamicPrimeNGFormControlContainerComponent extends DynamicFormCont
     @Output() focus: EventEmitter<DynamicFormControlEvent> = new EventEmitter<DynamicFormControlEvent>();
     @Output("pEvent") customEvent: EventEmitter<DynamicFormControlEvent> = new EventEmitter<DynamicFormControlEvent>();
 
-    @ViewChild("componentViewContainer", {read: ViewContainerRef}) componentViewContainerRef: ViewContainerRef;
+    @ViewChild("componentViewContainer", { read: ViewContainerRef, static: true }) componentViewContainerRef: ViewContainerRef;
 
     constructor(protected componentFactoryResolver: ComponentFactoryResolver,
                 protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService,
-                protected dynamicFormInstancesService: DynamicFormInstancesService) {
+                protected componentService: DynamicFormComponentService,
+                protected relationService: DynamicFormRelationService) {
 
-        super(componentFactoryResolver, layoutService, validationService, dynamicFormInstancesService);
+        super(componentFactoryResolver, layoutService, validationService, componentService, relationService);
     }
 
     get componentType(): Type<DynamicFormControl> | null {
-        return this.layoutService.getCustomComponentType(this.model) || primeNGUIFormControlMapFn(this.model);
-    }
-
-    getTitle(): string {
-        const title = this.group!.get(this.model!.id)!.value || "";
-
-        if (["CHECKBOX", "CHECKBOX_GROUP", "RADIO_GROUP"].indexOf(this.model.type) < 0
-            && typeof title !== "object" && typeof title !== "boolean") {
-            return title;
-        }
-        return "";
+        return this.componentService.getCustomComponentType(this.model) || primeNGUIFormControlMapFn(this.model);
     }
 }
 

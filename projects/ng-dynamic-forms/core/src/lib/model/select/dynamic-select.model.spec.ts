@@ -37,8 +37,8 @@ describe("DynamicSelectModel test suite", () => {
         expect(model.type).toEqual(DYNAMIC_FORM_CONTROL_TYPE_SELECT);
         expect(model.value).toBeNull();
         expect(model.compareWithFn).toBe(looseIdentical);
-        expect(model.requiredUpdates).toBeDefined();
-        expect(model.disabledUpdates).toBeDefined();
+        expect(model.disabledChanges).toBeDefined();
+        expect(model.valueChanges).toBeDefined();
     });
 
     it("should get and set text property correctly", () => {

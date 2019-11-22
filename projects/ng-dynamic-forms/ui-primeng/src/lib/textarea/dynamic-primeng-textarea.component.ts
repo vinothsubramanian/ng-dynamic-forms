@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { InputTextarea } from "primeng/primeng";
 import {
@@ -12,7 +12,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-textarea",
-    templateUrl: "./dynamic-primeng-textarea.component.html",
+    templateUrl: "./dynamic-primeng-textarea.component.html"
 })
 export class DynamicPrimeNGTextAreaComponent extends DynamicFormControlComponent {
 
@@ -25,7 +25,7 @@ export class DynamicPrimeNGTextAreaComponent extends DynamicFormControlComponent
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pInputTextarea") pInputTextArea: InputTextarea;
+    @ViewChild("pInputTextarea", { static: true }) pInputTextArea: InputTextarea;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

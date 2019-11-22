@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, QueryList, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { UploadComponent } from "@progress/kendo-angular-upload";
 import {
@@ -13,8 +13,7 @@ import { DynamicKendoTemplateableFormControlComponent } from "../dynamic-kendo-t
 
 @Component({
     selector: "dynamic-kendo-upload",
-    templateUrl: "./dynamic-kendo-upload.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-kendo-upload.component.html"
 })
 export class DynamicKendoUploadComponent extends DynamicKendoTemplateableFormControlComponent {
 
@@ -30,7 +29,7 @@ export class DynamicKendoUploadComponent extends DynamicKendoTemplateableFormCon
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("kendoUpload") kendoUpload: UploadComponent;
+    @ViewChild("kendoUpload", { static: true }) kendoUpload: UploadComponent;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

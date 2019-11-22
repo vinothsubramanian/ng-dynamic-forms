@@ -21,6 +21,7 @@ import {
     DYNAMIC_FORM_CONTROL_TYPE_RADIO_GROUP,
     DYNAMIC_FORM_CONTROL_TYPE_RATING,
     DYNAMIC_FORM_CONTROL_TYPE_SELECT,
+    DYNAMIC_FORM_CONTROL_TYPE_SWITCH,
     DYNAMIC_FORM_CONTROL_TYPE_TEXTAREA,
     DYNAMIC_FORM_CONTROL_TYPE_TIMEPICKER,
     DynamicDatePickerModel,
@@ -29,9 +30,10 @@ import {
     DynamicFormControlContainerComponent,
     DynamicFormControlEvent,
     DynamicFormControlModel,
-    DynamicFormInstancesService,
+    DynamicFormComponentService,
     DynamicFormLayout,
     DynamicFormLayoutService,
+    DynamicFormRelationService,
     DynamicFormValidationService,
     DynamicTemplateDirective
 } from "@ss-dynamic-forms/core";
@@ -45,6 +47,7 @@ import { DynamicNGBootstrapInputComponent } from "./input/dynamic-ng-bootstrap-i
 import { DynamicNGBootstrapRadioGroupComponent } from "./radio-group/dynamic-ng-bootstrap-radio-group.component";
 import { DynamicNGBootstrapRatingComponent } from "./rating/dynamic-ng-bootstrap-rating.component";
 import { DynamicNGBootstrapSelectComponent } from "./select/dynamic-ng-bootstrap-select.component";
+import { DynamicNGBootstrapSwitchComponent } from "./switch/dynamic-ng-bootstrap-switch.component";
 import { DynamicNGBootstrapTextAreaComponent } from "./textarea/dynamic-ng-bootstrap-textarea.component";
 import { DynamicNGBootstrapTimePickerComponent } from "./timepicker/dynamic-ng-bootstrap-timepicker.component";
 
@@ -68,18 +71,22 @@ export class DynamicNGBootstrapFormControlContainerComponent extends DynamicForm
     @Output() focus: EventEmitter<DynamicFormControlEvent> = new EventEmitter<DynamicFormControlEvent>();
     @Output("ngbEvent") customEvent: EventEmitter<DynamicFormControlEvent> = new EventEmitter<DynamicFormControlEvent>();
 
-    @ViewChild("componentViewContainer", {read: ViewContainerRef}) componentViewContainerRef: ViewContainerRef;
+    @ViewChild("componentViewContainer", {
+        read: ViewContainerRef,
+        static: true
+    }) componentViewContainerRef: ViewContainerRef;
 
     constructor(protected componentFactoryResolver: ComponentFactoryResolver,
                 protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService,
-                protected dynamicFormInstancesService: DynamicFormInstancesService) {
+                protected componentService: DynamicFormComponentService,
+                protected relationService: DynamicFormRelationService) {
 
-        super(componentFactoryResolver, layoutService, validationService, dynamicFormInstancesService);
+        super(componentFactoryResolver, layoutService, validationService, componentService, relationService);
     }
 
     get componentType(): Type<DynamicFormControl> | null {
-        return this.layoutService.getCustomComponentType(this.model) || ngBootstrapUIFormControlMapFn(this.model);
+        return this.componentService.getCustomComponentType(this.model) || ngBootstrapUIFormControlMapFn(this.model);
     }
 }
 
@@ -115,6 +122,9 @@ export function ngBootstrapUIFormControlMapFn(model: DynamicFormControlModel): T
 
         case DYNAMIC_FORM_CONTROL_TYPE_SELECT:
             return DynamicNGBootstrapSelectComponent;
+
+        case DYNAMIC_FORM_CONTROL_TYPE_SWITCH:
+            return DynamicNGBootstrapSwitchComponent;
 
         case DYNAMIC_FORM_CONTROL_TYPE_TEXTAREA:
             return DynamicNGBootstrapTextAreaComponent;

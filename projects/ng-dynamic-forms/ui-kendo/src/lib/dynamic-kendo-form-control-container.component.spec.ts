@@ -175,7 +175,7 @@ describe("DynamicKendoFormControlContainerComponent test suite", () => {
 
         spyOn(component, "onModelValueUpdates");
 
-        (testModel as DynamicSelectModel<string>).valueUpdates.next("Two");
+        (testModel as DynamicSelectModel<string>).value = "Two";
 
         expect(component.onModelValueUpdates).toHaveBeenCalled();
     });
@@ -184,18 +184,9 @@ describe("DynamicKendoFormControlContainerComponent test suite", () => {
 
         spyOn(component, "onModelDisabledUpdates");
 
-        testModel.disabledUpdates.next(true);
+        testModel.disabled = true;
 
         expect(component.onModelDisabledUpdates).toHaveBeenCalled();
-    });
-
-    it("should update control activation when model required property changes", () => {
-
-        spyOn(component, "onModelRequiredUpdates");
-
-        testModel.requiredUpdates.next(true);
-
-        expect(component.onModelRequiredUpdates).toHaveBeenCalled();
     });
 
     it("should map a form control model to a form control component", () => {

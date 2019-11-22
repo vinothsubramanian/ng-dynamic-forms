@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Checkbox } from "primeng/primeng";
 import {
@@ -11,7 +11,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-checkbox",
-    templateUrl: "./dynamic-primeng-checkbox.component.html",
+    templateUrl: "./dynamic-primeng-checkbox.component.html"
 })
 export class DynamicPrimeNGCheckboxComponent extends DynamicFormControlComponent {
 
@@ -23,7 +23,7 @@ export class DynamicPrimeNGCheckboxComponent extends DynamicFormControlComponent
     @Output() change: EventEmitter<any> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pCheckbox") pCheckbox: Checkbox;
+    @ViewChild("pCheckbox", { static: true }) pCheckbox: Checkbox;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

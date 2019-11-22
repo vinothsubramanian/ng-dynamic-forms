@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Slider } from "primeng/primeng";
 import {
@@ -12,7 +12,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-slider",
-    templateUrl: "./dynamic-primeng-slider.component.html",
+    templateUrl: "./dynamic-primeng-slider.component.html"
 })
 export class DynamicPrimeNGSliderComponent extends DynamicFormControlComponent {
 
@@ -25,7 +25,7 @@ export class DynamicPrimeNGSliderComponent extends DynamicFormControlComponent {
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pSlider") pSlider: Slider;
+    @ViewChild("pSlider", { static: true }) pSlider: Slider;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

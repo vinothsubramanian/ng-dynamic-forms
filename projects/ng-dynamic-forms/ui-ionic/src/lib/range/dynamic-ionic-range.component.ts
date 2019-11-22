@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { IonRange } from "@ionic/angular";
 import {
@@ -11,8 +11,7 @@ import {
 
 @Component({
     selector: "dynamic-ionic-range",
-    templateUrl: "./dynamic-ionic-range.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-ionic-range.component.html"
 })
 export class DynamicIonicRangeComponent extends DynamicFormControlComponent {
 
@@ -24,7 +23,7 @@ export class DynamicIonicRangeComponent extends DynamicFormControlComponent {
     @Output() change: EventEmitter<any> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("ionRange") ionRange: IonRange;
+    @ViewChild("ionRange", { static: true }) ionRange: IonRange;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

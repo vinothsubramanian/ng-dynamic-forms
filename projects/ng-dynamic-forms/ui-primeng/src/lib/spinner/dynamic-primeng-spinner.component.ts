@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Spinner } from "primeng/primeng";
 import {
@@ -11,7 +11,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-spinner",
-    templateUrl: "./dynamic-primeng-spinner.component.html",
+    templateUrl: "./dynamic-primeng-spinner.component.html"
 })
 export class DynamicPrimeNGSpinnerComponent extends DynamicFormControlComponent {
 
@@ -23,7 +23,7 @@ export class DynamicPrimeNGSpinnerComponent extends DynamicFormControlComponent 
     @Output() change: EventEmitter<any> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pSpinner") pSpinner: Spinner;
+    @ViewChild("pSpinner", { static: true }) pSpinner: Spinner;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

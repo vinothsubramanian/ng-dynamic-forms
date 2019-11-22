@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { DateInputComponent } from "@progress/kendo-angular-dateinputs";
 import {
@@ -11,8 +11,7 @@ import {
 
 @Component({
     selector: "dynamic-kendo-dateinput",
-    templateUrl: "./dynamic-kendo-dateinput.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: "./dynamic-kendo-dateinput.component.html"
 })
 export class DynamicKendoDateInputComponent extends DynamicFormControlComponent {
 
@@ -24,7 +23,7 @@ export class DynamicKendoDateInputComponent extends DynamicFormControlComponent 
     @Output() change: EventEmitter<any> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("kendoDateInput") kendoDateInput: DateInputComponent;
+    @ViewChild("kendoDateInput", { static: true }) kendoDateInput: DateInputComponent;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

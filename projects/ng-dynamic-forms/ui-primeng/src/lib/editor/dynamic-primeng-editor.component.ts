@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
+import { Component, EventEmitter, Input, Output, ViewChild } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { Editor } from "primeng/primeng";
 import {
@@ -12,7 +12,7 @@ import {
 
 @Component({
     selector: "dynamic-primeng-editor",
-    templateUrl: "./dynamic-primeng-editor.component.html",
+    templateUrl: "./dynamic-primeng-editor.component.html"
 })
 export class DynamicPrimeNGEditorComponent extends DynamicFormControlComponent {
 
@@ -25,7 +25,7 @@ export class DynamicPrimeNGEditorComponent extends DynamicFormControlComponent {
     @Output() customEvent: EventEmitter<DynamicFormControlCustomEvent> = new EventEmitter();
     @Output() focus: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild("pEditor") pEditor: Editor;
+    @ViewChild("pEditor", { static: true }) pEditor: Editor;
 
     constructor(protected layoutService: DynamicFormLayoutService,
                 protected validationService: DynamicFormValidationService) {

@@ -1,4 +1,102 @@
-# 7.2.1
+# 9.1.0
+
+### **Features**
+
+A new UI package `@ng-dynamic-forms/ui-ngx-bootstrap` has been released. This allows using ngx-bootstrap with Bootstrap 4 now.
+Thus the package `@ng-dynamic-forms/ui-bootstrap` from now on is only recommended if still need to support Bootstrap 3.correctly
+
+* `appendTo` input now works in PrimeNG Dropdown and Multiselect
+* `decimalSeparator`, `thousandSeparator`, `formatInput` and `size` inputs now works in PrimeNG Spinner
+
+***
+
+# 9.0.0
+
+### **Breaking Changes**
+
+Updating `value` and `disabled` properties of any `DynamicFormControlModel` is now possible via simple setters:
+
+**BEFORE:**
+```ts
+myModel.valueUpdates.next("New Value");
+myModel.disabledUpdates.next(true);
+```
+
+**AFTER:**
+```ts
+myModel.value = "New Value";
+myModel.disabled = true;
+```
+
+Therefore both `valueUpdates` and `disabledUpdates` `Subject`s have been removed from `DynamicFormControlModel`.
+
+You can still track changes via newly introduced `valueChanges` and `disabledChanges` `Observable`s.
+
+***
+
+`reflect-metadata` **is now directly imported by the library so there's no need to import it on your own in** `polyfills.ts` **any more**.
+
+### **Bugfixes**
+
+* disable / enable now should be working on all components again (closes [#993](https://github.com/udos86/ng-dynamic-forms/issues/993))
+* `closed` output now working correctly in ng-bootstrap datepicker (closes [#994](https://github.com/udos86/ng-dynamic-forms/issues/994))
+
+### **Features**
+
+* Labels in Material form fields now support HTML (closes [#966](https://github.com/udos86/ng-dynamic-forms/issues/966))
+
+***
+
+# 8.1.1
+
+### **Features**
+
+* PrimeNG editor now supports `modules` closes [#996](https://github.com/udos86/ng-dynamic-forms/issues/996))
+
+### **Bugfixes**
+
+* `rootPath` is now correctly processed for multiple related form controls (closes [#990](https://github.com/udos86/ng-dynamic-forms/issues/990))
+* PrimeNG spinners now work when `min`/`max` properties are `null` (closes [#989](https://github.com/udos86/ng-dynamic-forms/issues/989))
+
+***
+
+# 8.1.0
+
+### **Features**
+
+* update of ngx-bootstrap, Prime NG, NG Bootstrap and Kendo to new major versions
+* `DynamicFormComponentService` now gives warning instead of failing when called with index argument for non-array (closes [#974](https://github.com/udos86/ng-dynamic-forms/issues/974))
+
+***
+
+# 8.0.1
+
+### **Bugfixes**
+
+* missing dash added to `DynamicFormControlContainerComponent` model type css class
+
+***
+
+# 8.0.0
+
+### **Features**
+
+* Upgrade to Angular 8 & Angular Material 8
+* **Major refactoring and enhancement of Related Form Controls feature** (see [README](https://github.com/udos86/ng-dynamic-forms/blob/master/README.md#related-form-controls))
+* `DynamicFormLayout` now supports selecting of form control types and multiple ids
+* `DynamicFormControlContainerComponent` templates now render a css class by model type
+* `findControlByModel()`function added to `DynamicFormService`
+* `findByModel() function added to `DynamicFormLayoutService`
+
+### **Breaking Changes**
+
+* `relation` property of `DynamicFormControlModel` has been renamed to `relations`
+* `action` property on `DynamicFormControlRelation` has been renamed to `match`
+* `connective` property on `DynamicFormControlRelation` has been renamed to `operator`
+
+***
+
+# 7.2.0
 
 ### **Features**
 
