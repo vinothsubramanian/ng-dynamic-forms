@@ -1,28 +1,84 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": {
-      "@ss-dynamic-forms/*": [
-        "./dist/@ss-dynamic-forms/*"
-      ]
-    },
-    "declaration": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "lib": [
-      "es2017",
+      "es2018",
       "dom"
     ],
-    "module": "es2015",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noUnusedParameters": true,
-    "removeComments": false,
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "target": "es5",
-    "typeRoots": [],
-    "types": []
+    "paths": {
+      "@ss-dynamic-forms/core": [
+        "dist/ss-dynamic-forms/core"
+      ],
+      "@ss-dynamic-forms/core/*": [
+        "dist/ss-dynamic-forms/core/*"
+      ],
+      "@ss-dynamic-forms/ui-basic": [
+        "dist/ss-dynamic-forms/ui-basic"
+      ],
+      "@ss-dynamic-forms/ui-basic/*": [
+        "dist/ss-dynamic-forms/ui-basic/*"
+      ],
+      "@ss-dynamic-forms/ui-bootstrap": [
+        "dist/ss-dynamic-forms/ui-bootstrap"
+      ],
+      "@ss-dynamic-forms/ui-bootstrap/*": [
+        "dist/ss-dynamic-forms/ui-bootstrap/*"
+      ],
+      "@ss-dynamic-forms/ui-foundation": [
+        "dist/ss-dynamic-forms/ui-foundation"
+      ],
+      "@ss-dynamic-forms/ui-foundation/*": [
+        "dist/ss-dynamic-forms/ui-foundation/*"
+      ],
+      "@ss-dynamic-forms/ui-ionic": [
+        "dist/ss-dynamic-forms/ui-ionic"
+      ],
+      "@ss-dynamic-forms/ui-ionic/*": [
+        "dist/ss-dynamic-forms/ui-ionic/*"
+      ],
+      "@ss-dynamic-forms/ui-kendo": [
+        "dist/ss-dynamic-forms/ui-kendo"
+      ],
+      "@ss-dynamic-forms/ui-kendo/*": [
+        "dist/ss-dynamic-forms/ui-kendo/*"
+      ],
+      "@ss-dynamic-forms/ui-material": [
+        "dist/ss-dynamic-forms/ui-material"
+      ],
+      "@ss-dynamic-forms/ui-material/*": [
+        "dist/ss-dynamic-forms/ui-material/*"
+      ],
+      "@ss-dynamic-forms/ui-ng-bootstrap": [
+        "dist/ss-dynamic-forms/ui-ng-bootstrap"
+      ],
+      "@ss-dynamic-forms/ui-ng-bootstrap/*": [
+        "dist/ss-dynamic-forms/ui-ng-bootstrap/*"
+      ],
+      "@ss-dynamic-forms/ui-primeng": [
+        "dist/ss-dynamic-forms/ui-primeng"
+      ],
+      "@ss-dynamic-forms/ui-primeng/*": [
+        "dist/ss-dynamic-forms/ui-primeng/*"
+      ],
+      "@ss-dynamic-forms/ui-ngx-bootstrap": [
+        "dist/ss-dynamic-forms/ui-ngx-bootstrap"
+      ],
+      "@ss-dynamic-forms/ui-ngx-bootstrap/*": [
+        "dist/ss-dynamic-forms/ui-ngx-bootstrap/*"
+      ]
+    }
   }
 }

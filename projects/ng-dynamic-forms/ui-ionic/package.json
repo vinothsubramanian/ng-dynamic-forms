@@ -1,0 +1,45 @@
+{
+  "name": "@ss-dynamic-forms/ui-ionic",
+  "version": "9.1.01",
+  "description": "Ionic UI package for NG Dynamic Forms",
+  "keywords": [
+    "angular",
+    "dynamic forms",
+    "forms",
+    "ionic",
+    "ng dynamic forms",
+    "reactive forms",
+    "ui"
+  ],
+  "homepage": "https://github.com/vinothsubramanian/ss-dynamic-forms#readme",
+  "bugs": {
+    "url": "https://github.com/vinothsubramanian/ss-dynamic-forms/issues"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Udo Schöfer",
+    "email": "ng2-dynamic-forms@udos86.de",
+    "url": "https://github.com/udos86/ss-dynamic-forms"
+  },
+  "main": "./bundles/ui-ionic.umd.js",
+  "module": "./fesm5/ui-ionic.js",
+  "typings": "./ui-ionic.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinothsubramanian/ss-dynamic-forms.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "@angular/forms": "^8.0.0",
+    "@ionic/angular": "^4.0.0",
+    "@ss-dynamic-forms/core": "^9.1.01",
+    "rxjs": "^6.4.0"
+  },
+  "es2015": "./fesm2015/ui-ionic.js",
+  "esm2015": "./esm2015/ui-ionic.js",
+  "esm5": "./esm5/ui-ionic.js",
+  "fesm2015": "./fesm2015/ui-ionic.js",
+  "fesm5": "./fesm5/ui-ionic.js",
+  "sideEffects": false
+}

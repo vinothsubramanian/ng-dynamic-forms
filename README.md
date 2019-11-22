@@ -3,20 +3,21 @@
 # NG Dynamic Forms
 
 [![npm version](https://badge.fury.io/js/%40ng-dynamic-forms%2Fcore.svg)](https://badge.fury.io/js/%40ng-dynamic-forms%2Fcore)
-[![Build Status](https://travis-ci.org/udos86/ng-dynamic-forms.svg?branch=master)](https://travis-ci.org/udos86/ng-dynamic-forms)
-[![Coverage Status](https://coveralls.io/repos/github/udos86/ng-dynamic-forms/badge.svg)](https://coveralls.io/github/udos86/ng-dynamic-forms)
+[![Build Status](https://travis-ci.org/udos86/ss-dynamic-forms.svg?branch=master)](https://travis-ci.org/udos86/ss-dynamic-forms)
+[![codecov](https://codecov.io/gh/udos86/ss-dynamic-forms/branch/master/graph/badge.svg)](https://codecov.io/gh/udos86/ss-dynamic-forms)
 [![DeepScan Grade](https://deepscan.io/api/projects/562/branches/912/badge/grade.svg)](https://deepscan.io/dashboard/#view=project&pid=562&bid=912)
 [![Downloads](http://img.shields.io/npm/dm/@ss-dynamic-forms/core.svg)](https://npmjs.org/package/@ss-dynamic-forms/core)
+
+***
 
 NG Dynamic Forms is a **rapid form development library** based on the official Angular
 [**dynamic forms guide**](https://angular.io/docs/ts/latest/cookbook/dynamic-form.html).
 
 It **fully automates form UI creation** by introducing a set of maintainable **form control models** and **dynamic form control components**
 
-**Out of the box support** is provided for all popular UI libraries including **[Bootstrap](http://getbootstrap.com)**, **[Foundation](http://foundation.zurb.com/)**, **[Ionic](http://ionicframework.com/)**,
-**[Kendo](http://www.telerik.com/kendo-angular-ui)**, **[Material](https://material.angular.io/)**, **[NG Bootstrap](https://ng-bootstrap.github.io/#/home)**, **[ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)** and **[PrimeNG](http://www.primefaces.org/primeng/#/)**.
+**Out of the box support** is provided for all popular UI libraries including **[Material](https://material.angular.io/)**, **[ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/)**, **[NG Bootstrap](https://ng-bootstrap.github.io/#/home)**, **[Foundation](http://foundation.zurb.com/)**, **[Ionic](http://ionicframework.com/)**, **[Kendo](http://www.telerik.com/kendo-angular-ui)** and **[PrimeNG](http://www.primefaces.org/primeng/#/)**.
 
-[**Explore it**](http://ng2-dynamic-forms.udos86.de/sample/index.aot.html) live in action!
+[**Explore it**](http://ng2-dynamic-forms.udos86.de/sample/index.html) live in action!
 
 ## Table of Contents
 
@@ -33,14 +34,11 @@ It **fully automates form UI creation** by introducing a set of maintainable **f
 - [Custom Validators](#custom-validators)
 - [Custom Form Controls](#custom-form-controls)
 - [Validation Messaging](#validation-messaging)
+- [Related Form Controls](#related-form-controls)
 - [JSON Export & Import](#json-export--import)
 - [JSON Form Models](#json-form-models)
-- [Updating Form Models](#updating-form-models)
-- [Disabling Form Controls](#disabling-form-controls)
 - [Text Masks](#text-masks)
-- [Related Form Controls](#related-form-controls)
 - [Autocompletion](#autocompletion)
-- [AOT Compilation](#aot-compilation)
 - [FAQ](#faq)
 - [Appendix](#appendix)
 
@@ -62,8 +60,8 @@ npm i @ss-dynamic-forms/ui-material -S
 
 **1. Clone the Git repository**:
 ```
-git clone https://github.com/udos86/ng-dynamic-forms.git
-cd ng-dynamic-forms
+git clone https://github.com/udos86/ss-dynamic-forms.git
+cd ss-dynamic-forms
 ```
 
 **2. Install the dependencies**:
@@ -71,34 +69,27 @@ cd ng-dynamic-forms
 npm i
 ```
 
-**3. Build the packages**:
+**3. Build the library**:
 ```
-npm run build:packages
-```
-
-**4. Transpile the code**:
-```
-npm run watch:sample
+npm run build:lib
 ```
 
-**5. Run the application**:
+**4. Run the application**:
 ```
-npm start
+ng serve
 ```
 
 
 ## Basic Usage
 
-**1. Import** `DynamicFormsCoreModule` **and a UI module**:
+**1. Import the UI module**:
 ```typescript
-import { DynamicFormsCoreModule } from "@ss-dynamic-forms/core";
 import { DynamicFormsMaterialUIModule } from "@ss-dynamic-forms/ui-material";
 
 @NgModule({
 
     imports: [
         ReactiveFormsModule,
-        DynamicFormsCoreModule,
         DynamicFormsMaterialUIModule
     ]
 })
@@ -186,14 +177,14 @@ export class MyDynamicFormComponent implements OnInit {
 
 NG Dynamic Forms is built to provide **solid yet unobtrusive** support for a variety of common UI libraries:
 
-* **[Basic](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-basic)**
-* **[Bootstrap / ngx-bootstrap](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-bootstrap)**
-* **[Foundation](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-foundation)**
-* **[Ionic](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-ionic)**
-* **[Kendo UI](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-kendo)**
-* **[Material](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-material)**
-* **[NG Bootstrap](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-ng-bootstrap)**
-* **[PrimeNG](https://github.com/udos86/ng-dynamic-forms/tree/master/packages/ui-primeng)**
+* **[Basic](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-basic)**
+* **[Foundation](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-foundation)**
+* **[Ionic](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-ionic)**
+* **[Kendo UI](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-kendo)**
+* **[Material](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-material)**
+* **[NG Bootstrap](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-ng-bootstrap)**
+* **[ngx-bootstrap](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-ngx-bootstrap)**
+* **[PrimeNG](https://github.com/udos86/ss-dynamic-forms/tree/master/packages/ui-primeng)**
 
 You can instantly plug in your favorite form controls by **installing the appropriate
 package and its peer dependencies**:
@@ -207,7 +198,6 @@ npm i @ss-dynamic-forms/ui-<library-name> -S
 
     imports: [
         ReactiveFormsModule,
-        DynamicFormsCoreModule,
         DynamicFormsMaterialUIModule
     ]
 })
@@ -238,22 +228,22 @@ Alternatively you can **directly make use of a specific** `DynamicFormControlCom
 Due to technical restrictions or external dependencies still being in development the support of major form controls
 varies among UI packages. **See the following compatibility table**:
 
-|                	| ui-basic 	| ui-bootstrap 	| ui-foundation 	| ui-ionic 	| ui-kendo 	| ui-material 	| ui-ng-bootstrap 	| ui-primeng 	|
-|----------------	|:--------:	|:------------:	|:-------------:	|:--------:	|:--------:	|:-----------:	|:---------------:	|:----------:	|
-| Checkbox       	|     ✓    	|       ✓      	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
-| Checkbox Group 	|     ✓    	|       ✓      	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
-| Colorpicker    	|   ****   	|     ****     	|      ****     	|   ****   	|   ****   	|     ****    	|       ****      	|      ✓     	|
-| Datepicker     	|     *    	|       ✓      	|       *       	|     ✓    	|     ✓    	|      *      	|        ✓        	|      ✓     	|
-| Editor         	|     ✗    	|       ✗      	|       ✗       	|     ✗    	|     ✗    	|      ✗      	|        ✗        	|      ✓     	|
-| File Upload    	|    **    	|      **      	|       **      	|     ✗    	|     ✓    	|      **     	|        **       	|     **     	|
-| Input          	|     ✓    	|       ✓      	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
-| Radio Group    	|     ✓    	|       ✓      	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
-| Rating         	|     ✗    	|       ✗      	|       ✗       	|     ✗    	|     ✗    	|      ✗      	|        ✗        	|      ✓     	|
-| Select         	|     ✓    	|       ✓      	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
-| Slider         	|    ***   	|      ***     	|      ***      	|     ✓    	|     ✓    	|      ✓      	|       ***       	|      ✓     	|
-| Switch         	|     ✗    	|       ✗      	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✗        	|      ✓     	|
-| Textarea       	|     ✓    	|       ✓      	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
-| Timepicker     	|     *    	|       ✓      	|       *       	|     ✓    	|     ✓    	|      *      	|        ✓        	|      ✓     	|
+|                	| ui-basic 	| ui-ngx-bootstrap 	| ui-foundation 	| ui-ionic 	| ui-kendo 	| ui-material 	| ui-ng-bootstrap 	| ui-primeng 	|
+|----------------	|:--------:	|:----------------:	|:-------------:	|:--------:	|:--------:	|:-----------:	|:---------------:	|:----------:	|
+| Checkbox       	|     ✓    	|         ✓        	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
+| Checkbox Group 	|     ✓    	|         ✓        	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
+| Colorpicker    	|   ****   	|         ✗        	|      ****     	|   ****   	|   ****   	|     ****    	|       ****      	|      ✓     	|
+| Datepicker     	|     *    	|         ✓        	|       *       	|     ✓    	|     ✓    	|      *      	|        ✓        	|      ✓     	|
+| Editor         	|     ✗    	|         ✗        	|       ✗       	|     ✗    	|     ✗    	|      ✗      	|        ✗        	|      ✓     	|
+| File Upload    	|    **    	|        **        	|       **      	|     ✗    	|     ✓    	|      **     	|        **       	|     **     	|
+| Input          	|     ✓    	|         ✓        	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
+| Radio Group    	|     ✓    	|         ✓        	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
+| Rating         	|     ✗    	|         ✓        	|       ✗       	|     ✗    	|     ✗    	|      ✗      	|        ✗        	|      ✓     	|
+| Select         	|     ✓    	|         ✓        	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
+| Slider         	|    ***   	|        ***       	|      ***      	|     ✓    	|     ✓    	|      ✓      	|       ***       	|      ✓     	|
+| Switch         	|     ✗    	|         ✗        	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✗        	|      ✓     	|
+| Textarea       	|     ✓    	|         ✓        	|       ✓       	|     ✓    	|     ✓    	|      ✓      	|        ✓        	|      ✓     	|
+| Timepicker     	|     *    	|         ✓        	|       *       	|     ✓    	|     ✓    	|      *      	|        ✓        	|      ✓     	|
 
 **\*)** datetime controls can be achieved using a `DynamicInputModel` with `inputType: "date"` or `inputType: "time"`
 
@@ -823,6 +813,28 @@ providers: [
     }
 ]
 ```
+You can also have multiple validators on the same input bu providing multiple key|value pairs in the useValue:
+```typescript
+providers: [
+    {
+        provide: NG_VALIDATORS,
+        useValue: myCustomValidator,
+        multi: true
+    },
+     {
+        provide: NG_VALIDATORS,
+        useValue: myOtherCustomValidator,
+        multi: true
+    },
+    {
+        provide: DYNAMIC_VALIDATORS,
+        useValue: new Map<string, Validator | ValidatorFactory>([
+            ["myCustomValidator", myCustomValidator],
+            ["myOtherCustomValidator", myOtherCustomValidator]
+        ])
+    }
+]
+```
 
 Another suitable solution for most situations would be to **make use of the alternate validator notation**:
 ```typescript
@@ -1035,6 +1047,107 @@ and **bind the** `FormControl` **reference via a local template variable**:
 </form>
 ```
 
+
+## Related Form Controls
+
+In many forms the state of a certain form control directly depends on the `value` or `status` of some other form control.
+
+Implementing such a connection manually would be time-consuming and only lead to undesired boilerplate code.
+
+NG Dynamic Forms enables you to declaratively add form control relations by using so called `DynamicFormControlMatcher`s.
+
+A matcher defines the action that should take place for a predefined `match` when a `value` or `state` change has occured on the related form control.
+```typescript
+export interface DynamicFormControlMatcher {
+
+    match: string;
+    opposingMatch: string | null;
+    onChange(hasMatch: boolean, model: DynamicFormControlModel, control: FormControl, injector: Injector): void;
+}
+```
+
+At the moment there are the following **default matchers** available:
+
+* `DisabledMatcher`
+* `HiddenMatcher`
+* `RequiredMatcher`
+
+**NOTE: Always make sure that you're providing every** `DynamicFormControlMatcher` **in your** `app.module`:
+```typescript
+providers: [
+    // ...
+    DISABLED_MATCHER,
+    REQUIRED_MATCHER
+]
+```
+
+ That way you're also totally **free to implement your own custom matcher**:
+```typescript
+ export const MyCustomMatcher: DynamicFormControlMatcher = {
+
+    match: MATCH_CUSTOM,
+    opposingMatch: MATCH_CUSTOM_OPPOSITE,
+    onChange(hasMatch: boolean, model: DynamicFormControlModel): void {
+        if (hasMatch) {
+            console.log("It's a match");
+        }
+    }
+};
+```
+```typescript
+export const MY_CUSTOM_MATCHER: ValueProvider = {
+    provide: DYNAMIC_MATCHERS,
+    useValue: MyCustomMatcher,
+    multi: true
+};
+```
+
+So let's pretend we need to have our textarea `myTextArea` disabled as soon as the third option of our select menu `mySelect` is chosen.
+
+Just add a `relations` property to your `DynamicFormControlModel`, then declare a `DynamicFormControlRelation` by setting a `match` for a certain `DynamicFormControlCondition`:
+
+```typescript
+new DynamicTextAreaModel(
+    {
+        id: "myTextArea",
+        label: "My Textarea",
+        relations: [
+            {
+                match: MATCH_DISABLED,
+                when: [
+                    { id: "mySelect", value: "option-3" }
+                ]
+            }
+        ]
+    }
+```
+**That's it** - the library will automatically add all the pieces together under the hood.
+
+*But what if `myTextArea` should depend on another control `myRadioGroup` as well?*
+
+Luckily there's support for **multi-related form controls**, too.
+
+Just add a second `DynamicFormControlCondition` entry and (optionally) define how all conditions should logically be connected via `operator`:
+```typescript
+new DynamicTextAreaModel(
+    {
+        id: "myTextArea",
+        label: "My Textarea",
+        relations: [
+            {
+                match: MATCH_DISABLED,
+                operator: AND_OPERATOR,
+                when: [
+                    { id: "mySelect", value: "option-3" },
+                    { id: "myRadioGroup", value: "option-4" }
+                ]
+            }
+        ]
+    }
+)
+```
+
+
 ## JSON Export & Import
 
 Sooner or later you likely want to persist your dynamic form model in order to restore it at some point in the future.
@@ -1121,59 +1234,6 @@ ngOnInit() {
 ```
 
 
-## Updating Form Models
-
-One of the benefits of using NG Dynamic Forms is that programmatically interacting with your form becomes pretty easy.
-
-Since a `DynamicFormControlModel` is bound directly to a `DOM` element via Angular core mechanisms,
-changing one of it's properties will immediately trigger an update of the user interface.
-
-But there's one major exception!
-
-NG Dynamic Forms relies on the Angular `ReactiveFormsModule`. Therefore the `value` property **is not two-way-bound** via `[(ngModel)]` under the hood.
-
-So what if we actually want to update the value of an arbitrary form control at runtime?
-
-At first we need to get a reference to it's `DynamicFormControlModel` representation.
-
-This can easily be achieved either by
-a simple index-based array lookup or through the `findById` method of `DynamicFormService`:
-
-```typescript
-this.inputModel = this.formModel[2];
-```
-```typescript
-this.inputModel = this.formService.findById("myInput", this.formModel) as DynamicInputModel;
-```
-
-We now have access to a `Rx.Subject` named `valueUpdates` to push new values via `next()` as well as to listen to new user input via `subscribe()`:
-```typescript
-this.inputModel.valueUpdates.next("my new value");
-
-this.inputModel.valueUpdates.subscribe(value => console.log("new value: ", value);
-```
-
-At any time we can also safely read the most recent user input from the `value` property:
-```typescript
-let currentValue = this.inputModel.value;
-```
-
-
-## Disabling Form Controls
-
-Dating back to RC.6, Angular [**does not allow**](https://github.com/angular/angular/issues/11271) property bindings of the `disabled` attribute in reactive forms.
-
-That means changing the corresponding `disabled` property of a `DynamicFormControlModel` at runtime won't have any effect.
-
-But similar to [updating values](#updating-form-models) NG Dynamic Forms helps you out here
-by providing a `Rx.Subject` named `disabledUpdates`.
-
-It can be used to programmatically switch the activation state of a form control through a `DynamicFormControlModel`:
-```typescript
-this.inputModel.disabledUpdates.next(true);
-```
-
-
 ## Text Masks
 
 Whenever an `<input>` element needs to be filled in a predefined value format, text masks make a nice form enhancement to guide the user.
@@ -1209,65 +1269,6 @@ new DynamicInputModel({
 ```
 
 Please note that some UI libraries like Kendo UI come with their own text mask implementation that may rely on a different text mask string / regex representation.
-
-
-## Related Form Controls
-
-In many complex forms the activation state of a certain form control depends directly on the `value` or `status` of some other form control.
-
-So let's pretend we need to have our textarea `myTextArea` disabled as soon as the third option of our select menu `mySelect` is chosen.
-
-Manually implementing such a requirement would be time-consuming and only lead to undesired boilerplate code.
-
-**Using NG Dynamic Forms however, you can easily define relations between form controls by declaration**:
-```typescript
-new DynamicTextAreaModel(
-    {
-        id: "myTextArea",
-        label: "My Textarea",
-        relation: [
-            {
-                action: "DISABLE",
-                when: [
-                    {
-                        id: "mySelect",
-                        value: "option-3"
-                    }
-                ]
-            }
-        ]
-    }
-```
-
-The `relation` property may seem a bit oversized at first sight, but that way it allows the flexible declaration of even **multi-related form controls**.
-
-*So what if the activation state of `myTextArea` should actually depend on another control `myRadioGroup` as well?*
-
-Just add a second entry to the `when` array and define how both relations should logically be connected via `connective`:
-```typescript
-new DynamicTextAreaModel(
-    {
-        id: "myTextArea",
-        label: "My Textarea",
-        relation: [
-            {
-                action: "DISABLE",
-                connective: "AND",
-                when: [
-                    {
-                        id: "mySelect",
-                        value: "option-3"
-                    },
-                    {
-                        id: "myRadioGroup",
-                        value: "option-4"
-                    }
-                ]
-            }
-        ]
-    }
-)
-```
 
 
 ## Autocompletion
@@ -1332,15 +1333,6 @@ new DynamicInputModel({
 ```
 
 
-## AOT Compilation
-
-[Ahead-of-Time (AOT) Compilation](https://angular.io/guide/aot-compiler) significantly improves the overall performance of any Angular application.
-
-Since NG Dynamic Forms bundle files **fully match** [**Angular Package Format**](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/edit) **all packages fit in seamlessly** with your AoT build - whether your'e using the Angular CLI `--aot` flag , `@ngtools/webpack` plugin or directly `@angular/compiler-cli`.
-
-Yet, **no guarantee can be given for any peer dependency** to properly integrate with AOT.
-
-
 ## FAQ
 
 > **Why should I use NG Dynamic Forms?**
@@ -1369,7 +1361,7 @@ Yes, namely [ng-formly](https://github.com/formly-js/ng-formly), [ngx-forms](htt
 
 > **How can I support this project besides contributing issues or code?**
 
-[Star](https://github.com/udos86/ng-dynamic-forms/stargazers) the repository.
+[Star](https://github.com/udos86/ss-dynamic-forms/stargazers) the repository.
 
 
 ## Appendix
